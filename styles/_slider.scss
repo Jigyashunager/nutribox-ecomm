@@ -1,0 +1,27 @@
+
+.main-slider{
+    border-top: 1px solid $text-gray;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $background !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: white !important;
+    --swiper-navigation-size: 20px;
+    background-color: $background;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.swiper-button-next{
+    padding: 18px 18px 18px 20px;
+}
+.swiper-button-prev{
+    padding: 18px 20px 18px 18px;
+
+}
+.slider-image{
+    width: -webkit-fill-available;
+}

@@ -1,0 +1,416 @@
+$background: #06645c;
+$text-color: #014a44;
+$ui-font: system-ui;
+
+
+.navbar {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-left: -40px;
+    margin-right: -30px;
+}
+
+.search-bg {
+    background-color: $background;
+    margin-left: 129px;
+    display: flex;
+    align-items: center;
+    padding: 2px 100px 0px 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    transform: skewX(-10deg);
+    color: white;
+    z-index: 999;
+    font-weight: 400;
+    margin-right: 13px;
+}
+
+#collasible-nav-dropdown:after {
+    content: none;
+}
+
+.search-input {
+    transform: skewX(-10deg);
+    width: 600px !important;
+}
+
+.search-icon {
+    margin-left: -30px;
+    z-index: 99;
+}
+
+.header-right {
+    display: block;
+    font-size: 13px;
+}
+
+.header-right {
+    span {
+        margin-left: 5px;
+        font-weight: 700;
+    }
+
+    svg {
+        font-size: 30px;
+        color: $background;
+    }
+
+    .icons {
+        position: absolute;
+        display: flex;
+        margin-left: 100px;
+    }
+
+    .heart-icon {
+        cursor: pointer;
+    }
+
+    .circle {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #C60303;
+        left: -17px;
+        top: 15px;
+        color: white;
+        font-weight: 600;
+        /* Add margin to create spacing between the circle and the text */
+    }
+}
+
+.header-right:hover span {
+    cursor: pointer;
+    color: $text-color;
+}
+
+.header-lists {
+    color: black;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    z-index: 99;
+}
+
+.header-lists {
+    .header-list-mains {
+        margin-right: 40px;
+        font-weight: 500;
+        font-size: 15px;
+        color: gray;
+    }
+}
+
+.header-lists .header-list-mains:hover {
+    color: $text-color;
+    cursor: pointer;
+
+    .social .link:hover {
+        color: white;
+        margin-left: -5px;
+        transform: translateX(20px) rotate(360deg);
+    }
+}
+
+.header-hero-tags {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    font-weight: 800;
+}
+
+.header-hero-tags {
+    p {
+        transform: scale(1.5, 2);
+        margin-top: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+        color: $text-color;
+    }
+
+    h4 {
+        font-size: 14px;
+        margin-top: 10px;
+        font-weight: 600;
+        color: #473f3b;
+    }
+
+    .icons {
+        color: #473f3b;
+        margin-right: 10px;
+    }
+}
+
+.search-bg .dropdown,
+.dropdown-center,
+.dropend,
+.dropstart,
+.dropup,
+.dropup-center {
+    position: relative;
+    transform: skewX(10deg) !important;
+}
+
+.search-bg .nav-link {
+    padding: 10px;
+}
+
+.sports-category-list {
+    list-style: none;
+
+    .top-heading {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    li {
+        padding-right: 12px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-family: system-ui;
+        font-weight: 400;
+    }
+}
+
+.categories-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: -32px;
+    margin-top: -8px;
+
+    li {
+        padding: 10px 21px 10px 19px;
+        font-family: system-ui;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    li:hover {
+        color: $text-color;
+        background-color: #aaded9;
+
+    }
+}
+
+
+.dropdown-menu[data-bs-popper] {
+    width: 61pc;
+    overflow: hidden;
+    border: 0px;
+    margin-top: 8px;
+}
+
+#sports-category-show {
+    display: flex;
+
+    li:hover {
+        color: $text-color;
+    }
+}
+
+#vitamins-category-show {
+    display: flex;
+
+    li:hover {
+        color: $text-color;
+    }
+}
+
+#herbs-category-show {
+    display: flex;
+
+    li:hover {
+        color: $text-color;
+    }
+}
+
+#health-category-show {
+    display: flex;
+
+    li:hover {
+        color: $text-color;
+    }
+}
+
+#fitness-category-show {
+    display: flex;
+
+    li:hover {
+        color: $text-color;
+    }
+}
+
+.best-sellers-div .dropdown-menu {
+    min-width: 25rem !important;
+    border: 0px !important;
+    border-radius: 5px;
+
+    .arrow-span {
+        position: absolute;
+        left: 150px;
+    }
+
+    .dropdown-items {
+        background-color: white;
+        width: 180px;
+        height: 374px;
+        margin-bottom: -10px;
+    }
+
+    a {
+        margin-top: -8px;
+        font-size: 16 px;
+        padding-top: 20px;
+        padding-bottom: 17px;
+        font-weight: 500;
+    }
+
+    a:hover {
+        background-color: #aaded9;
+        color: $text-color;
+    }
+
+    .color-white {
+        margin-top: -8px;
+        font-size: 16 px;
+        padding-top: 20px;
+        padding-bottom: 17px;
+        font-weight: 500;
+        background-color: white;
+    }
+}
+
+.underline-text {
+    background-color: white;
+}
+
+#dropdown-button-drop-end {
+    background-color: white !important;
+    color: black !important;
+    border: 0px !important;
+    transform: skewX(-10deg) !important;
+
+    .dropdown-menu .show {
+        transform: scaleX(-10deg) !important;
+    }
+}
+
+.dropdown-menu .show[aria-labelledby="dropdown-button-drop-end"] {
+    transform: skewX(-9deg) !important;
+}
+
+.best-sellers-list {
+    position: absolute;
+    padding-left: 180px;
+    top: 3%;
+    color: black;
+    z-index: -1;
+
+    ul {
+        padding-left: 30px;
+    }
+
+    li {
+        list-style: none;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: system-ui;
+        padding: 4px;
+        list-style: none;
+    }
+
+    li:hover {
+        color: #014a44;
+    }
+}
+
+.brands-div .dropdown-menu {
+    min-width: 63pc !important;
+    border: 0px !important;
+    border-radius: 5px;
+    margin-left: -70px;
+    overflow-x: scroll;
+
+}
+
+.brands-logo {
+    display: flex;
+
+    img {
+        margin-left: 45px;
+        width: 78px;
+        border-style: groove;
+    }
+}
+
+/* Target the horizontal scrollbar in WebKit-based browsers */
+.dropdown-menu::-webkit-scrollbar {
+    width: 2px;
+    /* Width of the scrollbar */
+    height: 7px;
+}
+
+/* Customize the background and border of the scrollbar track */
+.dropdown-menu::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+/* Customize the appearance of the scrollbar thumb (the draggable handle) */
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #999999;
+    border-radius: 8px;
+}
+
+/* Target the horizontal scrollbar in Firefox */
+::-moz-scrollbar {
+    /* CSS properties for Firefox scrollbar */
+}
+
+/* Target the horizontal scrollbar in Internet Explorer/Edge */
+::-ms-scrollbar {
+    /* CSS properties for IE/Edge scrollbar */
+}
+
+.deal-icons {
+    display: flex;
+    width: 450px;
+
+    img {
+        margin-left: 10px;
+    }
+}
+
+.deals-div {
+    .dropdown-menu {
+        border: 0px;
+    }
+}
+
+.customer-div {
+    .dropdown-menu {
+        border: 0px;
+        width: 184px !important;
+    }
+
+    li:hover {
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: system-ui;
+    }
+}

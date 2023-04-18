@@ -1,0 +1,126 @@
+.footer {
+    height: 700px;
+    background-color: #151515;
+    margin-top: 50px;
+    .copyright{
+        text-align: center;
+        color: rgb(195, 182, 170);
+        padding-top: 20px;
+    }
+    .footer-signup {
+        color: white;
+        justify-content: center;
+        text-align: center;
+        font-family: fantasy;
+        display: flex;
+        padding-top: 60px;
+
+        span {
+            margin-right: 10px;
+            margin-top: -10px;
+            color: #06645c;
+            font-weight: 900;
+            stroke: #06645c;
+            stroke-width: 4;
+        }
+
+        svg {
+            margin-top: 16px;
+        }
+    }
+
+    .footer-top {
+
+        p {
+            color: rgb(195, 182, 170);
+            text-align: center;
+        }
+
+        .email-input {
+            margin-left: 26pc;
+            padding: 7px 320px 7px 0px;
+            transform: $tranform;
+            margin-bottom: 60px;
+        }
+
+        input:focus {
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type=email] {
+            padding-left: 25px;
+            font-family: system-ui, -apple-system;
+            text-align: left;
+        }
+
+        button {
+            transform: $tranform;
+            border: 0px;
+            padding: 9px 19px 9px 19px;
+            margin-left: -20px;
+            background-color: $text-color;
+            color: white;
+            border-radius: 2px;
+            font-family: system-ui;
+
+        }
+    }
+    .footer-middle{
+        display: grid;
+        grid-template-columns: 270px 270px 270px 270px 270px;
+        grid-row: auto auto auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        font-family: system-ui;
+        margin: 50px 0px 50px 60px;
+        h6{
+            color: rgb(131, 128, 128);
+            font-size: 15px;
+            font-weight: 600;
+        }
+        h5{
+            color: white;
+            font-size: 16px;
+        }
+        h6:hover{
+            color: $text-color;
+            cursor: pointer;
+        }
+    }
+    .footer-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h5{
+            color: rgb(131, 128, 128);
+            font-size: 14px;
+            text-align: center;
+        }
+        h6{
+            color: white;
+            text-align: center;
+            font-size: 16px;
+        }
+        svg{
+            color: rgb(131, 128, 128);
+        }
+        .vertical-line{
+            border-right: 1px solid rgb(39, 38, 38);
+            transform-origin: right;
+            height: 130px;
+        }
+        div{
+            margin: 0px 37px 0px 122px;;
+        }
+    }
+    
+}
+
+.straight-line {
+    background-color: #ffffff;
+    height: 0.5px;
+    transform-origin: top center;
+    transform: scaleY(0.1);
+    // margin-top: 40PX;
+}
