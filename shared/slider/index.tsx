@@ -140,7 +140,7 @@ const Slider = ({ value }: { value: string }) => {
                 <div className="brand-logo-image">
                   <Image
                     alt="nutritrix"
-                    src="/brandl1.png"
+                    src="https://i.ibb.co/6H3KSdV/brandl1.png"
                     width={100}
                     height={100}
                     priority
@@ -151,7 +151,7 @@ const Slider = ({ value }: { value: string }) => {
                 <div className="brand-logo-image">
                   <Image
                     alt="nutritrix"
-                    src="/brandl2.png"
+                    src="https://i.ibb.co/CnYjd2n/brandl2.png"
                     width={100}
                     height={100}
                     priority
@@ -162,7 +162,7 @@ const Slider = ({ value }: { value: string }) => {
                 <div className="brand-logo-image">
                   <Image
                     alt="nutritrix"
-                    src="/brandl3.png"
+                    src="https://i.ibb.co/5nfchjR/brandl3.png"
                     width={100}
                     height={100}
                     priority
@@ -173,7 +173,7 @@ const Slider = ({ value }: { value: string }) => {
                 <div className="brand-logo-image">
                   <Image
                     alt="nutritrix"
-                    src="/brandl4.png"
+                    src="https://i.ibb.co/vhsGXR3/brandl4.png"
                     width={100}
                     height={100}
                     priority
@@ -184,7 +184,7 @@ const Slider = ({ value }: { value: string }) => {
                 <div className="brand-logo-image">
                   <Image
                     alt="nutritrix"
-                    src="/brandl5.png"
+                    src="https://i.ibb.co/Qnkf5xm/brandl5.png"
                     width={100}
                     height={100}
                     priority
@@ -195,7 +195,7 @@ const Slider = ({ value }: { value: string }) => {
                 <div className="brand-logo-image">
                   <Image
                     alt="nutritrix"
-                    src="/brandl6.png"
+                    src="https://i.ibb.co/JHBhvjb/brandl6.png"
                     width={100}
                     height={100}
                     priority
@@ -206,7 +206,7 @@ const Slider = ({ value }: { value: string }) => {
                 <div className="brand-logo-image">
                   <Image
                     alt="nutritrix"
-                    src="/brandl7.png"
+                    src="https://i.ibb.co/Xz50dJG/brandl7.png"
                     width={100}
                     height={100}
                     priority
