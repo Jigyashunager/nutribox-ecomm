@@ -29,6 +29,7 @@
             "price": "$90",
             "image": "https://i.ibb.co/T25F7kf/goldPC.jpg",
             "rating": 3,
+            "discount": "20% OFF",
             "images": [
                 {
                     "original": "https://i.ibb.co/T25F7kf/goldPC.jpg",
@@ -51,6 +52,7 @@
             "price": "$90",
             "image": "https://i.ibb.co/mD2NPwy/grassPC.jpg",
             "rating": 3,
+            "discount": "20% OFF",
             "images": [
                 {
                     "original": "https://i.ibb.co/mD2NPwy/grassPC.jpg",
@@ -117,6 +119,7 @@
             "price": "$90",
             "image": "https://i.ibb.co/0nk9xzt/nitroPC.jpg",
             "rating": 3,
+            "discount": "20% OFF",
             "images": [
                 {
                     "original": "https://i.ibb.co/0nk9xzt/nitroPC.jpg",
@@ -137,6 +140,7 @@
             "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
             "category": "Category",
             "price": "$90",
+            "discount": "20% OFF",
             "image": "https://i.ibb.co/cNZ9gCk/standPC.jpg",
             "rating": 3,
             "images": [

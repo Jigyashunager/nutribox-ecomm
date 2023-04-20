@@ -572,7 +572,77 @@ div#__next {
 }
 
 
+.float-right {
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    background-color: white;
+    right: 0%;
+    width: 20pc;
+    height: 50pc;
+    padding-bottom: 50pc;
+    h5{
+        margin-top: 15px;
+        margin-left: 15px;
+        font-size: 18px;
+        padding-bottom: 7px;
+    }
+    h6{
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 17px;        
+    }
+    .top-side-cart{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gainsboro;
+    }
+    .close{
+        display: flex;
+        cursor: pointer;
+    }
+    .closeIcon{
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .bottom-side-cart{
+        position: fixed;
+            bottom: 0%;
+        .subtotal{
+            border-top: 1px solid gainsboro;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 7px;
+        span{
+            font-size: 18px;
+            padding-right: 30px;
+        }
+        }
+        button{
+            padding: 10px 106px 10px 106px;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            border: 0px;
+            transform: $tranform;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .view-cart:hover{
+            background-color: #ebe8e8;
 
+        }
+        .checkout{
+            background-color: #06645c;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .checkout:hover{
+            background-color: #073e3a;
+
+        }
+    }
+}
 // @media (min-width: 1500px) {
 
 //     /* Your styles here */

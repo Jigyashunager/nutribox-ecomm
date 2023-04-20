@@ -12,8 +12,11 @@
     top: 100px !important;
 }
 
+.modal-content{
+    border-radius: 0px !important;
+}
 .modal-body{
-    width: 72pc !important;
+    width: 74pc !important;
 }
 
 .product-top-modal{
@@ -23,11 +26,12 @@
 }
 
 .product-right-modal{
+    width: 80pc;
     .wishlist-icon{
         margin: -297px 0px 0px -48px;
     }
     .wishlist-icon-color{
-        margin: -297px 0px 0px -61px;
+        margin: -297px 0px 0px -48px;
     }
     .product-price{
         margin-top: 20px;
@@ -72,4 +76,8 @@
             margin-bottom: -10px;
         }
     }
+}
+
+.float-right{
+   box-shadow: 0px 0px 0pc 75pc #0a0a0ab1
 }

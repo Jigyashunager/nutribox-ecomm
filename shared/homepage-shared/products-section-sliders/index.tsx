@@ -13,8 +13,9 @@ import Slider from "@/shared/homepage-shared/slider";
 import myCustomData from "@/json-data/data.json";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import PopupModal from "../popup-modal";
+import SideCart from "../sideCart";
 
-const ProductsSection = ({ heading, handleButtonClick }: { heading: string, handleButtonClick: Function }) => {
+const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { heading: string, handleButtonClick: Function, handleSideCart: Function }) => {
   const [selected, setSelected] = useState<string>("");
   const [value, setValue] = useState<number>(2);
   const [defaultValue, setDefaultValue] = useState<boolean>(true);
@@ -48,6 +49,10 @@ const ProductsSection = ({ heading, handleButtonClick }: { heading: string, hand
 
   }, [num])
 
+  const openSideCart = (product:any) => {
+    handleSideCart(product)
+  }
+  
   return (
     <>
       <div className="product-section-class">
@@ -139,8 +144,8 @@ const ProductsSection = ({ heading, handleButtonClick }: { heading: string, hand
                 <div className="product-price">
                   <h5>$90.00</h5>
                 </div>
-                <button className="hover-up">
-                  <span>ADD TO CART</span>
+                <button onClick={() => openSideCart(product)} className="hover-up">
+                  <span className="add-to-cart" >ADD TO CART</span>
                 </button>
               </div>
             </div>
@@ -149,7 +154,6 @@ const ProductsSection = ({ heading, handleButtonClick }: { heading: string, hand
           ))}
         </Swiper>
       </div>
-      {/* <Slider value={heading} /> */}
     </>
   );
 };
