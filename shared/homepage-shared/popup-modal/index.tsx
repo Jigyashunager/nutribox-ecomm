@@ -38,12 +38,7 @@ function PopupModal({ product }: { product: any }) {
             thumbnail: 'https://i.ibb.co/Jqwsh63/gallery4.jpg',
         },
     ];
-    const run = (event: any) => {
-        // console.log(event)
-    }
 
-    var sliderImages: object
-    console.log(product)
     return (
         <>
             <div className="circle-quickview" onClick={handleShow}>
@@ -59,7 +54,6 @@ function PopupModal({ product }: { product: any }) {
                             slideInterval={1000}
                             // thumbnailPosition={"left"}
                             showThumbnails={false}
-                            onSlide={run}
                         />
                     </Modal.Body>
 

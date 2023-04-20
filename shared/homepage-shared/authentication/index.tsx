@@ -14,8 +14,6 @@ const Authentication = ({wishlistCount}:{wishlistCount:any}) => {
         }
       }
 
-      console.log(wishlistCount)
-
   return (
     <>
     <div className="header-right">

@@ -342,12 +342,12 @@ swiper-slide {
 }
 
 .quickview-icon {
-  color: white;
-  font-size: 14px;
+  color: white !important;
+  font-size: 14px !important;
 }
 
 .swiper-slide:hover .circle-quickview{
-  display: inline-flex;
+  display: inline-flex !important;
 }
 
 .product-slider-class{
