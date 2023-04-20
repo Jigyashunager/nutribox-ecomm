@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import LatestDeals from "@/shared/latest-deals";
+import LatestDeals from "@/shared/homepage-shared/latest-deals";
 
 
 const Banner = () => {

@@ -1,51 +1,158 @@
- {"data" : [
-    {
-        "id": "1",
-        "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
-        "category": "Category",
-        "price": "$90",
-        "image": "https://i.ibb.co/RgC4Pjr/fusionPC.jpg"
-    },
-    {
-        "id": "2",
-        "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
-        "category": "Category",
-        "price": "$90",
-        "image": "https://i.ibb.co/T25F7kf/goldPC.jpg"
-    },
-    {
-        "id": "3",
-        "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
-        "category": "Category",
-        "price": "$90",
-        "image": "https://i.ibb.co/mD2NPwy/grassPC.jpg"
-    },
-    {
-        "id": "4",
-        "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
-        "category": "Category",
-        "price": "$90",
-        "image": "https://i.ibb.co/x8bNrqy/maxPC.jpg"
-    },
-    {
-        "id": "5",
-        "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
-        "category": "Category",
-        "price": "$90",
-        "image": "https://i.ibb.co/Tck0tF8/naturePC.jpg"
-    },
-    {
-        "id": "6",
-        "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
-        "category": "Category",
-        "price": "$90",
-        "image": "https://i.ibb.co/0nk9xzt/nitroPC.jpg"
-    },
-    {
-        "id": "7",
-        "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
-        "category": "Category",
-        "price": "$90",
-        "image": "https://i.ibb.co/cNZ9gCk/standPC.jpg"
-    }
-]}
+{
+    "data": [
+        {
+            "id": "1",
+            "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
+            "category": "Category",
+            "price": "$90",
+            "image": "https://i.ibb.co/RgC4Pjr/fusionPC.jpg",
+            "rating": 3,
+            "images": [
+                {
+                    "original": "https://i.ibb.co/RgC4Pjr/fusionPC.jpg",
+                    "thumbnail": "https://i.ibb.co/Jqwsh63/gallery4.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/RgC4Pjr/fusionPC.jpg",
+                    "thumbnail": "https://i.ibb.co/WcgVcH1/gallery1.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/RgC4Pjr/fusionPC.jpg",
+                    "thumbnail": "https://i.ibb.co/pw7YDpQ/gallery3.jpg"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
+            "category": "Category",
+            "price": "$90",
+            "image": "https://i.ibb.co/T25F7kf/goldPC.jpg",
+            "rating": 3,
+            "images": [
+                {
+                    "original": "https://i.ibb.co/T25F7kf/goldPC.jpg",
+                    "thumbnail": "https://i.ibb.co/Jqwsh63/gallery4.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/T25F7kf/goldPC.jpg",
+                    "thumbnail": "https://i.ibb.co/WcgVcH1/gallery1.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/T25F7kf/goldPC.jpg",
+                    "thumbnail": "https://i.ibb.co/pw7YDpQ/gallery3.jpg"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
+            "category": "Category",
+            "price": "$90",
+            "image": "https://i.ibb.co/mD2NPwy/grassPC.jpg",
+            "rating": 3,
+            "images": [
+                {
+                    "original": "https://i.ibb.co/mD2NPwy/grassPC.jpg",
+                    "thumbnail": "https://i.ibb.co/Jqwsh63/gallery4.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/mD2NPwy/grassPC.jpg",
+                    "thumbnail": "https://i.ibb.co/WcgVcH1/gallery1.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/mD2NPwy/grassPC.jpg",
+                    "thumbnail": "https://i.ibb.co/pw7YDpQ/gallery3.jpg"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
+            "category": "Category",
+            "price": "$90",
+            "image": "https://i.ibb.co/x8bNrqy/maxPC.jpg",
+            "rating": 3,
+            "images": [
+                {
+                    "original": "https://i.ibb.co/x8bNrqy/maxPC.jpg",
+                    "thumbnail": "https://i.ibb.co/Jqwsh63/gallery4.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/x8bNrqy/maxPC.jpg",
+                    "thumbnail": "https://i.ibb.co/WcgVcH1/gallery1.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/x8bNrqy/maxPC.jpg",
+                    "thumbnail": "https://i.ibb.co/pw7YDpQ/gallery3.jpg"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
+            "category": "Category",
+            "price": "$90",
+            "image": "https://i.ibb.co/Tck0tF8/naturePC.jpg",
+            "rating": 3,
+            "images": [
+                {
+                    "original": "https://i.ibb.co/Tck0tF8/naturePC.jpg",
+                    "thumbnail": "https://i.ibb.co/Jqwsh63/gallery4.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/Tck0tF8/naturePC.jpg",
+                    "thumbnail": "https://i.ibb.co/WcgVcH1/gallery1.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/Tck0tF8/naturePC.jpg",
+                    "thumbnail": "https://i.ibb.co/pw7YDpQ/gallery3.jpg"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
+            "category": "Category",
+            "price": "$90",
+            "image": "https://i.ibb.co/0nk9xzt/nitroPC.jpg",
+            "rating": 3,
+            "images": [
+                {
+                    "original": "https://i.ibb.co/0nk9xzt/nitroPC.jpg",
+                    "thumbnail": "https://i.ibb.co/Jqwsh63/gallery4.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/0nk9xzt/nitroPC.jpg",
+                    "thumbnail": "https://i.ibb.co/WcgVcH1/gallery1.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/0nk9xzt/nitroPC.jpg",
+                    "thumbnail": "https://i.ibb.co/pw7YDpQ/gallery3.jpg"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "name": "Optimum Nutrition Gold Standard 100% Whey Proteinn",
+            "category": "Category",
+            "price": "$90",
+            "image": "https://i.ibb.co/cNZ9gCk/standPC.jpg",
+            "rating": 3,
+            "images": [
+                {
+                    "original": "https://i.ibb.co/cNZ9gCk/standPC.jpg",
+                    "thumbnail": "https://i.ibb.co/Jqwsh63/gallery4.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/cNZ9gCk/standPC.jpg",
+                    "thumbnail": "https://i.ibb.co/WcgVcH1/gallery1.jpg"
+                },
+                {
+                    "original": "https://i.ibb.co/cNZ9gCk/standPC.jpg",
+                    "thumbnail": "https://i.ibb.co/pw7YDpQ/gallery3.jpg"
+                }
+            ]
+        }
+    ]
+}

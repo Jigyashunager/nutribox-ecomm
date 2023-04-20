@@ -9,8 +9,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import Slider from "@/shared/slider";
+import Slider from "@/shared/homepage-shared/slider";
 import myCustomData from "@/json-data/data.json";
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import PopupModal from "../popup-modal";
 
 const ProductsSection = ({ heading, handleButtonClick }: { heading: string, handleButtonClick: Function }) => {
   const [selected, setSelected] = useState<string>("");
@@ -33,16 +35,17 @@ const ProductsSection = ({ heading, handleButtonClick }: { heading: string, hand
     if (storedCount) {
       setNum(JSON.parse(storedCount));
     }
-
   }, []);
 
   useEffect(() => {
-    // Perform localStorage action
+    const myTimeout = setTimeout(myGreeting, 1000);
+
+    function myGreeting() {
     if(num.length >= 0) {
     const item = sessionStorage.setItem('wishlist-count', JSON.stringify(num))
     handleButtonClick(num.length)
+    }}
 
-}
   }, [num])
 
   return (
@@ -119,6 +122,7 @@ const ProductsSection = ({ heading, handleButtonClick }: { heading: string, hand
                   width={60}
                   height={60}
                 />
+                <PopupModal product={product}/>
                 <h6>Category</h6>
                 <h4 className="two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn

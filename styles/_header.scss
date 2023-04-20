@@ -65,6 +65,7 @@ $ui-font: system-ui;
         position: absolute;
         display: flex;
         margin-left: 100px;
+        top: 75px;
     }
 
     .heart-icon {
@@ -412,5 +413,93 @@ $ui-font: system-ui;
         font-size: 14px;
         font-weight: 400;
         font-family: system-ui;
+    }
+}
+
+.header-right {
+    margin-top: 16px;
+    .dropdown-toggle::after{
+    display: none !important;
+    }
+    .dropdown{
+        left: 40px;
+        button{
+            background-color: white;
+            color: $text-color;
+            border: 0px;
+        }
+    }
+    .person-icon {
+        position: absolute;
+        right: 212px;
+        top: 34px;
+    }
+    .dropdown-menu[data-bs-popper] {
+        border-radius: 0px;
+        width: 20pc;
+        top: 44px;
+        margin-left: -17pc;
+        border-top: 3px solid #014a44;
+        border-right: 2px solid gainsboro;
+        border-left: 2px solid gainsboro;
+        border-bottom: 2px solid gainsboro;
+    }
+    .dropdown-item:focus, .dropdown-item:hover{
+        background-color: white;
+    }
+    .sign-in{
+        display: flex;
+        justify-content: space-around;
+        margin: 0px -70px 0px -70px;
+        h4{
+            font-size: 16px;
+        }
+    }
+    .dropdown-item.active, .dropdown-item:active{
+        background-color: none;
+        color: $text-color;
+    }
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+        background-color: white;
+        color: $text-color;
+    }
+    .form-login{
+        margin-top: 5px;
+        margin-bottom: -20px;
+        label{
+            color: #686868;
+            margin-bottom: 3px;
+        }
+        input{
+            padding-left: 10px;
+            padding: 10px;
+            border: 1px solid gainsboro;
+        }
+        button{
+            background-color: black;
+            display: block;
+            color: white;
+            padding: 0px 0px 0px 0px;
+            padding: 8px 119px 8px 119px;
+        }
+        button:hover{
+            background-color: #014a44;
+        }
+        .otp-line{
+            text-align: center;
+            margin-top: 3px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .otp-line:hover{
+            color: #014a44;
+        }
+        .lost-password-line{
+            text-decoration: underline;
+            text-align: right;
+        }
+    }
+    .form-tags{
+        display: grid;
     }
 }

@@ -1,14 +1,14 @@
-
-.product-slider-class .swiper-button-next, .swiper-button-prev{
-    color: white !important;
-    --swiper-navigation-size: 20px;
-    background-color: $background;
-    font-weight: 700;
-    border-radius: 50%;
-    top: 45% !important;
+.product-slider-class .swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  --swiper-navigation-size: 20px;
+  background-color: $background;
+  font-weight: 700;
+  border-radius: 50%;
+  top: 45% !important;
 }
 
-.products-slider .swiper-slide{
+.products-slider .swiper-slide {
   width: 260px !important;
   margin-left: -4px !important;
   margin-right: -4px !important;
@@ -17,180 +17,202 @@
 }
 
 .products-slider {
-    h6{
-        margin-left: 20px;
-        font-size: 12px;
-        text-decoration: underline;
-        margin-top: 15px;
-        color: #807f7f;
-    }
-    h6:hover{
-        color: $text-color;
-        cursor: pointer;
-    }
-    h4{
-        margin-left: 20px;
-        font-size: 14px;
-        width: 80%;
-    }
-    h5{
-        margin-left: 20px;
-        margin-top: 12px;
-        font-weight: 400;
-    }
-}    
+  h6 {
+    margin-left: 20px;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 15px;
+    color: #807f7f;
+  }
 
-.product-slider-class .swiper, swiper-container{
+  h6:hover {
+    color: $text-color;
+    cursor: pointer;
+  }
+
+  h4 {
+    margin-left: 20px;
+    font-size: 14px;
+    width: 80%;
+  }
+
+  h5 {
+    margin-left: 20px;
+    margin-top: 12px;
+    font-weight: 400;
+  }
+}
+
+.product-slider-class .swiper,
+swiper-container {
   margin-top: -10px !important;
   margin-right: 85px !important;
   margin-left: 85px !important;
   padding-right: 0px !important;
   padding-left: 18px !important;
+  
 }
 
+.latest-deals-slider{
+  
+  .circle-quickview{
+    position: relative;
+    top: -193px !important;
+    left: 196px !important;
+  }
+}
 .two-line-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.two-line-text:hover{
-    color: $text-color;
-    cursor: pointer;
+.two-line-text:hover {
+  color: $text-color;
+  cursor: pointer;
 }
 
-.stars{
-    margin-left: 17px;
-    font-size: 20px;
+.stars {
+  margin-left: 17px;
+  font-size: 20px;
 }
 
-.stars-rating{
-    display: flex;
-    align-items: center;
-    font-size: 15px;
+.stars-rating {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
 }
 
-  .hover-up {    
-    padding: 10px 50px 10px 50px;
-    margin-left: 15px;
-    position: relative;
-    overflow: hidden;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .hover-up span {
-    position: relative;
-    z-index: 1;
-    color: black;
+.hover-up {
+  padding: 10px 50px 10px 50px;
+  margin-left: 15px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+.hover-up span {
+  position: relative;
+  z-index: 1;
+  color: black;
+  font-weight: 600;
+}
+
+.hover-up::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: black;
+  transition: height 0.3s ease-out;
+  z-index: 0;
+}
+
+.hover-up:hover::before,
+.product-card:hover .hover-up::before {
+  height: 100%;
+}
+
+.product-card:hover .hover-up span {
+  color: white;
+}
+
+.hover-up:hover::before {
+  background-color: $text-color;
+  transition: 0.2s ease-out;
+}
+
+.latest-deals-heading {
+  text-align: center;
+  margin-top: 50px;
+  font-family: $main-font;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  margin-bottom: 40px;  
+    h6 {
+    font-size: 14px;
     font-weight: 600;
+    color: gray;
+    font-family: system-ui;
+    margin-left: 200px;
+    margin-right: 15px
   }
-  
-  .hover-up::before {
+
+  h5 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: system-ui;
+    display: inline-block;
+    border-bottom: 2px solid $background;
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+  }
+
+  h5:before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0%;
-    background-color: black;
+    height: 0;
+    background-color: $background;
+    z-index: -1;
     transition: height 0.3s ease-out;
-    z-index: 0;
   }
-  
-  .hover-up:hover::before,
-  .product-card:hover .hover-up::before {
+
+  h5:hover::before {
     height: 100%;
   }
 
-  .product-card:hover .hover-up span{
+  h5:hover {
     color: white;
-  }
-  
-  .hover-up:hover::before{
-    background-color: $text-color;
-    transition: 0.2s ease-out;
-  }
-  
-  .latest-deals-heading{
-    text-align: center;
-    margin-top: 50px;
-    font-family: $main-font;
-    display: flex;
-    align-items: center;
-    margin-left: 60px;
-    margin-bottom: 40px;
-    h6{
-      font-size: 14px;
-      font-weight: 600;
-      color: gray;
-      font-family: system-ui;
-      margin-left: 200px;
-      margin-right: 15px
-    }
-    h5{
-      font-size: 14px;
-      font-weight: 500;
-      font-family: system-ui;
-      display:inline-block;
-      border-bottom:2px solid $background;
-      position: relative;
-      overflow: hidden;
-      padding: 2px;
-    }
-    h5:before{
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0;
-      background-color: $background;
-      z-index: -1;
-      transition: height 0.3s ease-out;
-    }
-    h5:hover::before {
-      height: 100%;
-    }
-    h5:hover{
-      color: white;
-      border-radius: 1px;
-      cursor: pointer;
+    border-radius: 1px;
+    cursor: pointer;
 
-    }
-    .arrow-span{
-        margin-right: 10px;
-        margin-top: -10px;
-        color: $background;
-        font-weight: 900;
-        stroke: $background;
-        stroke-width: 4;
-    }
-    .timer-span{
+  }
+
+  .arrow-span {
+    margin-right: 10px;
+    margin-top: -10px;
+    color: $background;
+    font-weight: 900;
+    stroke: $background;
+    stroke-width: 4;
+  }
+
+  .timer-span {
+    display: flex;
+    margin-right: 15px;
+
+    p {
+      margin-left: 2px;
+      margin-right: 2px;
+      background-color: $background;
+      margin-top: 8px;
+      border-radius: 3px;
+      transform: skewX(-10deg);
+      color: white;
+      font-size: 22px;
+      min-width: 50px;
       display: flex;
-      margin-right: 15px;
-      p{
-        margin-left: 2px;
-        margin-right: 2px;
-        background-color: $background;
-        margin-top: 8px;
-        border-radius: 3px;
-        transform: skewX(-10deg);
-        color: white;
-        font-size: 22px;
-        min-width: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 45px;
-      }     
+      justify-content: center;
+      align-items: center;
+      min-height: 45px;
     }
+  }
 }
 
-.wishlist-icon{
+.wishlist-icon {
   position: absolute;
   margin: 5px 0px 0px -35px;
   height: 29px;
@@ -198,7 +220,8 @@
   color: grayscale($color: #807f7f);
   cursor: pointer;
 }
-.wishlist-icon-color{
+
+.wishlist-icon-color {
   position: absolute;
   margin: 5px 0px 0px -35px;
   height: 29px;
@@ -207,46 +230,56 @@
   cursor: pointer;
 }
 
-.product-card-image{
+.product-card-image {
   margin-left: 15px;
 }
 
-.latest-deals-slider .product-card{
+.latest-deals-slider .product-card {
   display: flex;
   margin-bottom: 50px;
-  h6{
+
+  h6 {
     font-size: 12px;
     text-decoration: underline;
     margin-top: 15px;
-    color: #807f7f;  
+    color: #807f7f;
   }
-  h6:hover{
+
+  h6:hover {
     color: $text-color;
     cursor: pointer;
   }
-  h4{
+
+  h4 {
     font-size: 16px;
   }
-  .stars-rating{
+
+  .stars-rating {
     margin: 5px 0px 10px -19px;
     font-size: 15px;
   }
-  .stars{
+
+  .stars {
     font-size: 18px;
   }
-  .hover-up{
+
+  .hover-up {
     margin: 0px 0px 0px 0px;
   }
-  .product-info{
+
+  .product-info {
     margin-left: 30px;
     margin-top: 30px;
   }
-  .product-image{
+
+  .product-image {
     margin-left: 40px;
   }
-  .product-price{
+
+  .product-price {
     margin-bottom: 20px;
   }
+
   .progress-bar {
     width: 100%;
     height: 5px;
@@ -254,6 +287,7 @@
     background-color: grey;
     margin-top: -10px;
   }
+
   .progress {
     height: 100%;
     width: 52%;
@@ -263,36 +297,71 @@
 
 }
 
-.banner-ad{
+.banner-ad {
   width: -webkit-fill-available;
 }
 
-.latest-deals-slider  .swiper-slide, swiper-slide {
+.latest-deals-slider .swiper-slide,
+swiper-slide {
   margin: 0px 20px 0px -20px;
   justify-content: center;
-    display: flex;
+  display: flex;
 }
 
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset,0px) !important;
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 0px) !important;
   left: auto;
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
-  left: var(--swiper-navigation-sides-offset,0px) !important;
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 0px) !important;
   right: auto;
 }
-.swiper-button-next, .swiper-button-prev {
+
+.swiper-button-next,
+.swiper-button-prev {
   top: 45% !important;
 }
 
-@media (min-width: 1500px) {
-  /* Your styles here */
-  .product-slider-class .swiper, swiper-container{
-      margin-top: -10px !important;
-      margin-right: 195px !important;
-      margin-left: 195px !important;
-      padding-right: 0px !important;
-      padding-left: 11px !important;
+.circle-quickview{
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: $text-color;
+  top: -46px;
+  left: -33px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.quickview-icon {
+  color: white;
+  font-size: 14px;
+}
+
+.swiper-slide:hover .circle-quickview{
+  display: inline-flex;
+}
+
+.product-slider-class{
+  .circle-quickview{
+    display: inline-flex;
   }
 }
+// @media (min-width: 1500px) {
+//   /* Your styles here */
+//   .product-slider-class .swiper, swiper-container{
+//       margin-top: -10px !important;
+//       margin-right: 195px !important;
+//       margin-left: 195px !important;
+//       padding-right: 0px !important;
+//       padding-left: 11px !important;
+//   }
+// }

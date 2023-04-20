@@ -1,5 +1,4 @@
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import FormGroup from "react-bootstrap/FormGroup";
@@ -13,12 +12,16 @@ import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import React, { useState, useEffect, forwardRef, Fragment } from "react";
 import PagesHeader from "../header-tags";
 import HeaderHero from "../header-hero-tags";
-import Slider from "@/shared/slider";
+import Slider from "@/shared/homepage-shared/slider";
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Authentication from "@/shared/homepage-shared/authentication";
 
-function CollapsibleExample({wishlistCount}: {wishlistCount:string}) {
+function CollapsibleExample({ wishlistCount }: { wishlistCount: string }) {
   const [show, setShow] = useState(false);
   const [showCurrent, setShowCurrent] = useState<string>("sports-header-name");
   const [defaultValue, setDefaultValue] = useState<boolean>(true);
+  const [showLogin, setLoginShow] = useState<boolean>(false);
 
   const showDropdown = (e: any) => {
     setShow(!show);
@@ -28,7 +31,7 @@ function CollapsibleExample({wishlistCount}: {wishlistCount:string}) {
   };
 
   useEffect(() => {
-    
+
     var getElement = document.getElementById('collasible-nav-dropdown');
 
     if (getElement) {
@@ -38,8 +41,6 @@ function CollapsibleExample({wishlistCount}: {wishlistCount:string}) {
       }
     }
 
-
-    // Get the list item and hidden div elements
     var listItemSports = document.getElementById("sports-header-name");
     var listItemVitamins = document.getElementById("vitamins-header-name");
     var listItemHerbs = document.getElementById("herbs-header-name");
@@ -76,13 +77,18 @@ function CollapsibleExample({wishlistCount}: {wishlistCount:string}) {
       setShowCurrent("listItemWelness");
       setDefaultValue(false);
     });
-    if(defaultValue){
+    if (defaultValue) {
       setShowCurrent("listItemSports")
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [show]);
 
-  
+  const dropDownShow = (event:any) => {
+    if(event.defaultPrevented === false){
+      setLoginShow(!showLogin)
+    }
+  }
 
 
   return (
@@ -415,23 +421,52 @@ function CollapsibleExample({wishlistCount}: {wishlistCount:string}) {
               </span>
             </Navbar.Collapse>
           </Navbar.Collapse>
+          {/* <Authentication wishlistCount={wishlistCount}/> */}
           <div className="header-right">
-            <PersonOutlineIcon />
-            <span>Sign In / Register</span>
-            <br />
-            <div className="icons">
-              <FavoriteBorderIcon className="heart-icon" />
-              <p className="circle">{wishlistCount}</p>
-              <ShoppingBagOutlinedIcon />
-              <p className="circle">0</p>
-            </div>
-          </div>
-        </Container>
-      </Navbar>
-      <PagesHeader />
-      <Slider value="" />
-    </>
-  );
+            <PersonOutlineIcon className="person-icon" />
+            <DropdownButton id="dropdown-basic-button" title="Sign In / Register" show={showLogin} onClick={() => dropDownShow(event)}>
+              <Dropdown.Item>
+                <div>
+                  <div className="sign-in">
+                    <h4>Sign in</h4>
+                    <h4>Create an Account</h4>
+                  </div>
+                  <form className="form-login">
+                    <p className="form-tags">
+                      <label>
+                        Username or email
+                        <span>*</span>
+                      </label>
+                      <input placeholder="Username" />
+                    </p>
+                    <p className="form-tags">
+                      <label>
+                        Password
+                        <span>*</span>
+                      </label>
+                      <input placeholder="Password" />
+                    </p>
+                    <button>LOGIN</button>
+                    <p className="otp-line">Login/Sign Up with OTP</p>
+                    <p className="lost-password-line">Lost your password?</p>
+                  </form>
+                      </div>
+                    </Dropdown.Item>
+                  </DropdownButton>
+                  <br />
+                  <div className="icons">
+                    <FavoriteBorderIcon className="heart-icon" />
+                    <p className="circle">{wishlistCount}</p>
+                    <ShoppingBagOutlinedIcon />
+                    <p className="circle">0</p>
+                  </div>
+                </div>
+              </Container>
+            </Navbar>
+            <PagesHeader />
+            <Slider value="" />
+          </>
+          );
 }
 
-export default CollapsibleExample;
+          export default CollapsibleExample;

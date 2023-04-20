@@ -11,6 +11,7 @@ import "swiper/css/scrollbar";
 import Rating from "@mui/material/Rating";
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import myCustomData from "@/json-data/data.json";
+import PopupModal from "../popup-modal";
 
 const LatestDeals = () => {
   const [value, setValue] = useState<number>(2);
@@ -78,6 +79,7 @@ const LatestDeals = () => {
                   width={60}
                   height={60}
                 />
+                <PopupModal product={product}/>
               </div>
               <div key={index} className="product-info">
                 <h6>Category</h6>

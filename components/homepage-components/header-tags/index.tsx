@@ -320,6 +320,17 @@ const PagesHeader = () => {
             </div>
           </li>
           <li className="header-list-mains">
+            <NavDropdown
+              title="Shop"
+              id="collasible-nav-dropdown"
+              className="search-dropdown"
+              show={false}
+              onMouseEnter={showDropdown}
+              onMouseLeave={hideDropdown}
+            >
+            </NavDropdown>
+          </li>
+          <li className="header-list-mains">
             <div className="deals-div">
             <NavDropdown
               title="Deals"
