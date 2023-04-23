@@ -46,11 +46,12 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
     const item = sessionStorage.setItem('wishlist-count', JSON.stringify(num))
     handleButtonClick(num.length)
     }}
+    
 
   }, [num])
 
   const openSideCart = (product:any) => {
-    handleSideCart(product)
+        handleSideCart(product)
   }
   
   return (
@@ -154,6 +155,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
           ))}
         </Swiper>
       </div>
+      <Slider value={heading}/>
     </>
   );
 };

@@ -307,12 +307,12 @@ $text-gray: #807f7f;
 }
 
 .main-slider-offer {
-    margin: 60px 95px 0px 150px;
+    margin: 60px 95px 0px 110px;
 }
 
 .offer-img-main {
     display: flex;
-    margin: 60px 95px 0px 100px;
+    margin: 60px 95px 0px 144px;
 
     .offer-img img {
         border-radius: 14px;
@@ -419,6 +419,15 @@ $text-gray: #807f7f;
     }
 }
 
+.flex-quantity{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h6{
+        margin-left: 150px;
+    }
+}
+
 .main-bundle-content {
     display: flex;
     justify-content: center;
@@ -498,10 +507,6 @@ $text-gray: #807f7f;
             margin-left: -30px;
             margin-right: 10px;
         }
-
-        h6 {
-            margin-left: 120px;
-        }
     }
 
     .main-content-bundle {
@@ -578,9 +583,12 @@ div#__next {
     top: 0%;
     background-color: white;
     right: 0%;
-    width: 20pc;
-    height: 50pc;
+    width: 22pc;
+    height: 0pc;
     padding-bottom: 50pc;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 0.3sec;
     h5{
         margin-top: 15px;
         margin-left: 15px;
@@ -603,11 +611,13 @@ div#__next {
     }
     .closeIcon{
         margin-top: 15px;
-        cursor: pointer;
+    margin-left: 4px;
+    cursor: pointer;
     }
     .bottom-side-cart{
         position: fixed;
             bottom: 0%;
+            background-color: white;
         .subtotal{
             border-top: 1px solid gainsboro;
             display: flex;
@@ -620,7 +630,7 @@ div#__next {
         }
         }
         button{
-            padding: 10px 106px 10px 106px;
+            padding: 10px 117px 10px 117px;
             margin-left: 15px;
             margin-bottom: 10px;
             border: 0px;
@@ -655,3 +665,35 @@ div#__next {
 //         padding-left: 12px !important;
 //     }
 // }
+.middle-cart-content{
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    border-bottom: 1px solid gainsboro;
+    .headings-cart{
+        margin-bottom: -42px;
+        p{
+            color: black;
+            width: -24px;
+            position: relative;
+            top: -92px;
+            transform: scaleX(1.5) scaleY(1.5);
+            font-size: 46pxz;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            right: -317px;
+        }
+    }
+    h5{
+        font-size: 15px;
+    }
+    h5:hover{
+        color: #073e3a;
+    }
+    h6{
+        margin-top: -5px;
+        margin-left: 15px;
+        color: #073e3a;
+        font-weight: 500;
+    }
+}

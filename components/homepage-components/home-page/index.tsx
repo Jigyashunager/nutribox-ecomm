@@ -1,4 +1,4 @@
-import Banner from "@/shared/homepage-shared/banner";
+import Banner from "@/shared/homepage-shared/bannerOne";
 import Categories from "@/shared/homepage-shared/goals-homepage";
 import PopularCategories from "@/shared/homepage-shared/popular-categories";
 import React, { useState, useEffect } from "react";
@@ -10,17 +10,12 @@ import BundlePack from "@/shared/homepage-shared/bundle-pack";
 import BlogSlider from "@/shared/homepage-shared/blogs-slider";
 import Footer from "@/shared/homepage-shared/footer";
 import SideCart from "@/shared/homepage-shared/sideCart";
+import Slider from "@/shared/homepage-shared/slider";
+import BannerOne from "@/shared/homepage-shared/bannerOne";
+import LatestDeals from "@/shared/homepage-shared/latest-deals";
+import BannerTwo from "@/shared/homepage-shared/bannerTwo";
 
 const Homepage = () => {
-  const [name, setName] = useState("");
-
-  const showDropdown = (e: any) => {
-    setName(e.target.innerHTML);
-  };
-  const hideDropdown = (e: any) => {
-    setName("");
-  };
-
   const [wishlistCount, setWishlistCount] = useState<string>("")
   const [sideCartState, setSideCartState] = useState<any>("")
 
@@ -32,14 +27,18 @@ const Homepage = () => {
     setSideCartState({...sideCartState, value})
   }
 
+
   return (
     <>
-      <Header wishlistCount={wishlistCount} />
+      <Header wishlistCount={wishlistCount}/>  
+      <Slider value="" />
       <Categories/>
       <SideCart setProduct={sideCartState}/>
       <PopularCategories/>
       <ProductsSection handleSideCart={handleSideCart} handleButtonClick={handleButtonClick} heading="TRENDING NOW"/>
-      <Banner/>
+      <BannerOne/>
+      <LatestDeals/>
+      <BannerTwo/>
       <BundlePack/> 
       <ProductsSection handleSideCart={handleSideCart} handleButtonClick={handleButtonClick} heading="VITAMINS & MINERALS"/>
       <ProductsSection handleSideCart={handleSideCart} handleButtonClick={handleButtonClick} heading="RECOVERY & REPAIR"/>

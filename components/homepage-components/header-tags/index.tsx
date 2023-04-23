@@ -3,10 +3,12 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Dropdown from 'react-bootstrap/Dropdown';
 import Image from "next/image";
+import { useRouter } from 'next/router';
 
 
 const PagesHeader = () => {
   const [name, setName] = useState("");
+  const router = useRouter();
 
   const showDropdown = (e: any) => {
     setName(e.target.innerHTML);
@@ -23,6 +25,9 @@ const PagesHeader = () => {
     setHoveredItem(eventKey);
   };
 
+  const handleShopClick = () => {
+    router.push('/shop');
+  };
 
   return (
     <>
@@ -327,9 +332,10 @@ const PagesHeader = () => {
               show={false}
               onMouseEnter={showDropdown}
               onMouseLeave={hideDropdown}
+              onClick={handleShopClick}
             >
             </NavDropdown>
-          </li>
+            </li>
           <li className="header-list-mains">
             <div className="deals-div">
             <NavDropdown

@@ -1,10 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from "next/image";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import QuantityBox from '../quantity-box';
 
 
 const BundlePack = () => {
+
+    const [bundleTotalOne, setBundleTotalOne] = useState<any>()
+    const [bundleTotalTwo, setBundleTotalTwo] = useState<any>()
+
+    const handleBundleTotalOne = (value:any) => {
+        setBundleTotalOne(value)
+    };
+    const handleBundleTotalTwo = (value:any) => {
+        setBundleTotalTwo(value)
+    };
+  
     return (
         <>
         <div className='main-bundle-content'>
@@ -47,9 +58,8 @@ const BundlePack = () => {
                     />
                     <h4> Optimum Nutrition Gold Standard 100% Whey Protein </h4>
                       <div>
-                        <QuantityBox/>
+                        <QuantityBox handleBundleTotal={handleBundleTotalOne} price={"30.00"}/>
                     </div>
-                    <h6>$20.99</h6>
                 </div>
                 <div className='bundle-product'>
                     <Image
@@ -62,15 +72,13 @@ const BundlePack = () => {
                     />
                     <h4> Essential Amin.o. Energy + Uc-ii Collagen </h4>
                     <div>
-                        <QuantityBox/>
+                        <QuantityBox handleBundleTotal={handleBundleTotalTwo} price={"20.00"}/>
                     </div>
-                    <h6>$20.99</h6>
-
                 </div>
 
             </div>
             <div className='bundle-price'>
-            Bundle price: <span>$100</span>
+            Bundle price: <span>${(bundleTotalOne*30+bundleTotalTwo*20)}</span>
             </div>
             <button className='bundle-add-to'>ADD TO CART</button>
         </div>

@@ -80,7 +80,7 @@ function PopupModal({ product }: { product: any }) {
                                 <p>Et aut non sit voluptatum. Commodi nobis et commodi nihil commodi sit. Debitis qui omnis accusantium accusantium ut rerum. Qui sint voluptas quaerat.</p>
                             </div>
                             <div className='div-flex-quantity'>
-                                <QuantityBox />
+                                <QuantityBox handleBundleTotal={handlewWishList} price=""/>
                                 <button className="hover-up">
                                     <span>ADD TO CART</span>
                                 </button>

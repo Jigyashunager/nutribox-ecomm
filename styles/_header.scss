@@ -15,6 +15,11 @@ $ui-font: system-ui;
     margin-left: -40px;
     margin-right: -30px;
 }
+.main-logo {
+    cursor: pointer;
+    margin-left: -40px;
+    margin-right: -30px;
+}
 
 .search-bg {
     background-color: $background;
@@ -68,6 +73,9 @@ $ui-font: system-ui;
         top: 75px;
     }
 
+    .cart-icon{
+        cursor: pointer;
+    }
     .heart-icon {
         cursor: pointer;
     }
@@ -85,6 +93,7 @@ $ui-font: system-ui;
         top: 15px;
         color: white;
         font-weight: 600;
+        cursor: pointer;
         /* Add margin to create spacing between the circle and the text */
     }
 }

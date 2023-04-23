@@ -3,20 +3,9 @@ import Image from "next/image";
 import LatestDeals from "@/shared/homepage-shared/latest-deals";
 
 
-const Banner = () => {
+const BannerTwo = () => {
   return (
     <>
-    <div className="banner">
-        <Image
-            alt="nutritrix"
-            className="banner-ad"
-            src="/banner.png"
-            width={1270}
-            height={220}
-            priority
-          />
-      </div>
-      <LatestDeals/>
     <div className="banner-three">
       <div>
       <div className="image-container">
@@ -74,4 +63,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BannerTwo;
