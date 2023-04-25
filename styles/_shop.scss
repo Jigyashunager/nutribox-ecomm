@@ -1,5 +1,10 @@
+div#__next {
+    overflow-x: unset;
+    overflow-y: hidden;}
 
-
+.banner{
+    margin-bottom: 0px;
+}
 .page-distribution-heading {
     display: flex;
     justify-content: left;
@@ -30,6 +35,9 @@
 }
 
 .left-shop-page-content {
+    .left-two-line-text{
+        font-size: 14px;
+    }
     width: 25pc;
     .left-popular-categories {
         text-align: center;
@@ -56,7 +64,28 @@
         }
 
     }
+    
     .left-popular-categories-list{
+        .left-product-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 60px;
+            
+        .left-stars-rating{
+            span{
+            top: 2px;
+            left: -6px;
+        }
+        }
+        .left-product-info{
+            margin-left: 10px;
+            margin-top: 7px;
+        }
+        .left-product-price{
+            margin-top: 10px;
+        }
+        }
         ul{
         list-style: none;
         margin: -15px 10px 10px 28px;
@@ -80,4 +109,234 @@
             margin-right: 20px;
         }
     }
+}
+
+
+.price-slider{
+    margin-left: 60px;
+    margin-top: -12px;
+    width: 335px;
+    p{
+        margin-top: 15px;
+    }
+    .MuiSlider-root{
+        color: $text-color;
+    }
+    .MuiSlider-thumb{
+        background-color: white;
+        border: 3px solid $text-color;
+    }
+    .price-slider-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button{
+        border: 0px;
+        transform: $tranform;
+        padding: 3px 20px 3px 20px;
+        border-radius: 2px ;
+    }
+    button:hover{
+        background-color: $text-color;
+        color: white;
+        
+    }
+    
+}
+
+.tags-flex{
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    p{
+        display: block;
+        background-color: gainsboro;
+        margin-left: 10px;
+        padding: 3px 0px 4px 0px;
+        text-align: center;
+        transform: $tranform;
+        cursor: pointer;
+    }
+    p:hover{
+        background-color: $text-color;
+        color: white;
+    }
+}
+
+.right-shop-page-content{
+    position: relative;
+    top: 45px;
+    left: 30px;
+    .right-upper-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        width: 64pc;
+    }
+    .upper-bar{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .right-product-card{
+        display: grid;
+        grid-template-columns: 270px 270px 270px;
+        grid-row: auto auto auto;
+        grid-column-gap: 40px;
+        grid-row-gap: 10px;
+        margin-bottom: 40px;
+    }
+    .MuiPagination-root{
+        margin-left: 7px !important;
+        margin-bottom: 40px;
+        button{
+            padding: 20px 15px 20px 15px;
+            border-radius: 0px !important;
+            font-size: 18px;
+            font-family: system-ui;
+            border: 1px solid gainsboro;
+        }
+        button:hover{
+            color: white;
+            background-color: $text-color;
+        }
+        .Mui-selected{
+            background-color: $text-color;
+            color: white;
+        }
+    }
+    .product-card{
+        margin-left: 10px;
+        background-color: #F4F4F4;
+        padding: 20px;
+        width: 300px;
+        height: 470px;
+
+        .wishlist-icon{
+            position: absolute;
+            margin: -270px 0px 0px 240px;
+            height: 34px;
+            width: 25px;
+            color: gray;
+            cursor: pointer;
+        }
+        img{
+            margin-left: -15px;
+        }
+        .product-image{
+            margin-top: -20px;
+        }
+        h6{
+            margin-left: 5px;
+            font-size: 12px;
+            text-decoration: underline;
+            margin-top: 15px;
+            color: #807f7f;
+        }
+        .two-line-text{
+            font-size: 15px;
+            margin-left: 5px;
+
+        }
+        .stars{
+            margin-left: 3px;
+        }
+        .stars-count{
+            margin-left: 4px;
+            color: #807f7f;
+        }
+        .product-price{
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        .hover-up{
+            padding: 10px 99px 10px 99px;
+            margin-left: -20px;
+            margin-right: -20px;
+            border-radius: 0px;
+            margin-top: 2px;
+        }
+    }
+    .layout-icon-one{
+        font-size: 12px !important;
+        width: 32px !important;
+        height: 28px !important;
+        margin-right: 5px;
+        color: $text-color;
+        cursor: pointer;
+    }
+    .layout-icon-two{
+        font-size: 12px;
+        width: 32px;
+        height: 28px;
+        margin-left: 5px;
+        color: $text-color; 
+        cursor: pointer;
+    }
+    .dropdown{
+        button{
+            border: 0px;
+            background-color: white;
+            color: black;
+            margin-left: 20px;
+        }
+        .dropdown-toggle::after{
+            margin-left: 70px;
+        }
+        button:active{
+            background-color: white;
+            border-color: white;
+            color: black;
+        }
+        .dropdown-item.active, .dropdown-item:active{
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+
+.main-shop-page-content{
+    display: flex;
+    
+.circle-quickview{
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: $text-color;
+  top: -200px;
+  left: 242px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.quickview-icon {
+  color: white !important;
+  font-size: 14px !important;
+}
+
+.product-card:hover {.circle-quickview {
+  display: inline-flex !important;}
+  img{
+    margin-bottom: -24px;
+  }
+  .wishlist-icon{
+    margin: -246px 0px 0px  240px;
+  }
+}
+
+.product-slider-class{
+  .circle-quickview{
+    display: inline-flex;
+    margin-bottom: -32px;
+  }
+}
 }

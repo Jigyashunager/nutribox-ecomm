@@ -14,6 +14,7 @@ import myCustomData from "@/json-data/data.json";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import PopupModal from "../popup-modal";
 import SideCart from "../sideCart";
+import Link from "next/link";
 
 const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { heading: string, handleButtonClick: Function, handleSideCart: Function }) => {
   const [selected, setSelected] = useState<string>("");
@@ -114,7 +115,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
            <SwiperSlide key={index} >
             <div className="product-card">
               <div className="product-image">
-                <Image
+                <Link href={"/product"}><Image
                   alt="nutritrix"
                   src={product.image}
                   width={200}
@@ -122,6 +123,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
                   priority
                   className="product-card-image"
                 />
+                </Link>
                 <FavoriteOutlinedIcon
                   onClick={() => {handlewWishList(index)}}
                   className={num.includes(index) ? "wishlist-icon-color" : "wishlist-icon"}
@@ -130,7 +132,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
                 />
                 <PopupModal product={product}/>
                 <h6>Category</h6>
-                <h4 className="two-line-text">
+                <Link href={"/product"}><h4 className="two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn
                 </h4>
                 <div className="stars-rating">
@@ -145,6 +147,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
                 <div className="product-price">
                   <h5>$90.00</h5>
                 </div>
+                </Link>
                 <button onClick={() => openSideCart(product)} className="hover-up">
                   <span className="add-to-cart" >ADD TO CART</span>
                 </button>

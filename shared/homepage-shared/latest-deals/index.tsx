@@ -12,6 +12,7 @@ import Rating from "@mui/material/Rating";
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import myCustomData from "@/json-data/data.json";
 import PopupModal from "../popup-modal";
+import Link from "next/link";
 
 const LatestDeals = () => {
   const [value, setValue] = useState<number>(2);
@@ -66,13 +67,13 @@ const LatestDeals = () => {
             <SwiperSlide key={product.image}>
             <div className="product-card">
               <div className="product-image">
-                <Image 
+                <Link href={'/product'}><Image 
                   alt="nutritrix"
                   src={product.image}
                   width={230}
                   height={230}
                   priority
-                />
+                /></Link>
                 <FavoriteOutlinedIcon 
                   onClick={() => handlewWishList(index)}
                   className={num.includes(index) ? "wishlist-icon-color" : "wishlist-icon"}                  
@@ -83,7 +84,7 @@ const LatestDeals = () => {
               </div>
               <div key={index} className="product-info">
                 <h6>Category</h6>
-                <h4 className="two-line-text">
+                <Link href={'/product'}><h4 className="two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn
                 </h4>
                 <div className="stars-rating">
@@ -102,6 +103,7 @@ const LatestDeals = () => {
                 <div className="progress-bar">
                   <div className="progress"></div>
                 </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

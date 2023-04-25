@@ -51,6 +51,7 @@ swiper-container {
   padding-right: 0px !important;
   padding-left: 18px !important;
   
+  
 }
 
 .latest-deals-slider{
@@ -75,13 +76,16 @@ swiper-container {
 
 .stars {
   margin-left: 17px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .stars-rating {
   display: flex;
   align-items: center;
   font-size: 15px;
+  span{
+    color: black;
+  }
 }
 
 .hover-up {
@@ -260,7 +264,7 @@ swiper-container {
   }
 
   .stars {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .hover-up {
@@ -306,6 +310,30 @@ swiper-slide {
   margin: 0px 20px 0px -20px;
   justify-content: center;
   display: flex;
+}
+
+.product-image a{
+    text-decoration: none;
+    color: black;
+}
+.product-image a:hover{
+  color: black;
+}
+
+.product-info a{
+    text-decoration: none;
+    color: black;
+}
+.product-info a:hover{
+  color: black;
+}
+
+.left-product-info a{
+    text-decoration: none;
+    color: black;
+}
+.left-product-info a:hover{
+  color: black;
 }
 
 .swiper-button-next,
