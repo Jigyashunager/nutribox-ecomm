@@ -70,7 +70,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
             </span>
           </h2>
 
-          {heading !== "TRENDING NOW" ? <div className="products-section">
+          {heading !== "TRENDING NOW" && heading !== "SIMILAR PRODUCTS" ? <div className="products-section">
             <h4
               className={
                 defaultValue || selected === "featured"

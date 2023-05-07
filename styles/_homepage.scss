@@ -414,7 +414,7 @@ $text-gray: #807f7f;
     }
 
     .swiper-horizontal>.swiper-pagination-bullets {
-        left: -156px;
+        left: -151px;
         top: 239px;
     }
 }
@@ -481,8 +481,10 @@ $text-gray: #807f7f;
             height: 21px;
         }
         p{
-            padding: 0px 10px 0px 10px;
-        }
+            padding: 0px 0px 0px 20px;
+            max-width: 55px;
+            min-width: 55px;
+        }     
     }
 
     .bundle-products {

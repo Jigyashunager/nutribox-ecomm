@@ -56,17 +56,25 @@
         display: flex;
         border-bottom: 1px solid #014a44;
         width: 7.5pc;
-        padding-top: 20px;
+        padding-top: 14px;
         .minus{
             border: 0px;
             background-color: white;
-            padding-bottom: 5px;
+            padding-bottom: 2px;
 
         }
         .plus{
             border: 0px;
             background-color: white;
-            padding-bottom: 5px;
+                .MuiSvgIcon-root{
+                    top: 17pc;
+                    z-index: 9999;
+                    margin-top: 10px;
+                    left: 29pc;
+                    bottom: 0px;
+                    position: absolute;
+                    margin-left: 7px;
+                }
 
         }
         p{

@@ -1,3 +1,8 @@
+div#__next {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .image-slider {
     width: 44pc;
     margin-top: 50px;
@@ -17,13 +22,46 @@
     .image-gallery-thumbnail {
         transition: none;
     }
-
+    .product-benefits{
+        margin-top: 20px;
+        margin-left: 110px;
+        margin-right: 0px;
+        border: 1px solid #aaded9;
+        h6{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .tick-icon{
+            font-size: 16px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .product-benefits-flex{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: $light-background-blue;
+            div{
+                margin-left: -10px;
+            }
+            p{
+                text-align: center;
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
 .product-page-info {
     margin-left: 40px;
     margin-top: 50px;
     width: 40pc;
+
+    .div-flex-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .in-stock {
         display: block;
@@ -37,7 +75,7 @@
         transform: $tranform;
     }
 
-    h6 {
+    .product-heading {
         font-size: 40px;
         font-family: fantasy;
         font-weight: 400;
@@ -59,6 +97,7 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 12px;
+
         h5 {
             font-size: 14px;
             color: gray;
@@ -76,16 +115,144 @@
         color: $text-color;
     }
 
-    p {
-        font-size: 14px;
-        font-weight: 600;
-    }
-    .product-content{
-        font-size: 18px;
+
+    .product-content {
+        font-size: 16px;
         font-weight: 400;
         margin-bottom: 30px;
 
     }
+
+    .flavour{
+        h5{
+            margin-top: 20px;   
+        }
+        button{
+            h6{
+                margin-top: 6px;
+            }
+        }
+    }
+    .delviery-pdp{
+        padding: 15px;
+        margin-top: 20px;
+        background-color: #eaf7f6;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        .pincode-input{
+            padding-left: 15px;
+            padding: 7px;
+            border-radius: 3px;
+            border: 1px solid gray;
+            font-family: system-ui, -apple-system;
+            text-align: left;   
+        }
+        .gps-icon{
+            margin-left: 30px;
+            color: #014a44;
+        }
+        p{
+            margin-top: 15px;
+            margin-left: 10px;
+            font-weight: 500;
+            color: $text-color;
+            cursor: pointer;
+        }
+        button{
+            border: 0px;
+            padding: 9px 19px 9px 19px;
+            margin-left: -20px;
+            background-color: #014a44;
+            color: white;
+            border-radius: 2px;
+            font-family: system-ui;
+        }
+    }
+    .special-offers{
+        margin-top: 20px;
+        h6{
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        li{
+            padding: 5px;
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-left: -30px;
+            margin-bottom: 10px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            width: 33pc;
+            img{
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            p{
+                margin: 10px 0px 10px 0px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+    .weights-flex {
+        button {
+            margin-right: 10px;
+            border: 1px solid #014a44;
+            background-color: #e2fffc;
+            color: #014a44;
+            padding: 5px 15px 5px 15px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px;
+
+        }
+
+        p {
+            margin-bottom: 0px;
+
+        }
+    }
+
+    .product-weight {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 20px;
+
+        h5 {
+            margin-top: 7px;
+        }
+
+        div {
+            margin-left: 20px;
+            border-radius: 1px;
+            border: 1px solid $text-color;
+
+            button {
+                color: $text-color;
+                background-color: white;
+                border: 0px;
+                padding: 0px 13px 0px 13px;
+                font-weight: 600;
+            }
+
+            .div-color-left {
+                background-color: #e2fffc;
+                color: $text-color;
+                border-left: 1px solid $text-color;
+            }
+
+            .div-color-right {
+                background-color: #e2fffc;
+                color: $text-color;
+                border-right: 1px solid $text-color;
+            }
+        }
+    }
+
     .progress-bar {
         width: 100%;
         height: 5px;
@@ -105,38 +272,49 @@
         justify-content: left;
     }
 
-    .category-tags{
-        margin-top: 40px;
-        margin-bottom: 32px;
-        h5{
-        font-size: 16px ;
-        color: black;
-        font-weight: 400;
-        span{
-            color: gray;
+    .category-tags {
+        h5 {
+            font-size: 12px;
+            color: black;
+            font-weight: 400;
+
+            span {
+                color: $text-color;
+            }
         }
     }
-    }
-    .div-flex-icons{
+
+    .div-flex-icons {
         display: flex;
         justify-content: left;
         align-items: center;
-        .social-icons{
+        margin-top: 20px;
+
+        .social-icons {
             margin-top: -20px;
+
+            svg {
+                font-size: 16px;
+                margin-left: 10px;
+            }
         }
     }
-    .div-flex-buttons{
+
+    .div-flex-buttons {
         display: flex;
         margin-top: 10px;
         justify-content: left;
         align-items: center;
-        .hover-up{
+
+        .hover-up {
             transform: $tranform;
         }
+
         .hover-up:hover span {
             color: white;
         }
-        .wishlist-icon{
+
+        .wishlist-icon {
             position: relative;
             margin: 22px 8px 0px 12px;
             height: 31px;
@@ -144,15 +322,40 @@
             color: gray;
             cursor: pointer;
         }
-        .browse{
+
+        .wishlist-icon-color {
+            position: relative;
+            margin: 22px 8px 0px 12px;
+            height: 31px;
+            width: 21px;
+            color: #c60303;
+            cursor: pointer;
+        }
+
+        .browse {
             margin-top: 37px;
         }
     }
+
+    .num-in-stock {
+        color: #014a44;
+        margin-top: 45px;
+        margin-bottom: -10px;
+
+        span {
+            top: -2px;
+            color: #014a44;
+            position: relative;
+            margin: 0px 5px 0px 0px;
+        }
+    }
+
     .main-quantity-box {
         display: flex;
         border-bottom: 1px solid #014a44;
         width: 9.7pc;
-        padding-top: 20px;
+        padding-top: 15px;
+
 
         .minus {
             border: 0px;
@@ -161,15 +364,28 @@
 
         }
 
+        // .div-grid {
+        //     display: grid;
+        //     grid-template-rows: repeat(2,minmax(0,1fr));
+        // }
         .plus {
             border: 0px;
             background-color: white;
             padding-bottom: 5px;
 
+            .MuiSvgIcon-root {
+                top: 42pc;
+                right: 0px;
+                margin-top: 13px;
+                left: 58pc;
+                bottom: 0px;
+                position: absolute;
+            }
+
         }
 
         p {
-            padding-left: 35px;
+            padding-left: 30px;
             padding-right: 35px;
             font-size: 28px;
             padding-bottom: 13px;
@@ -177,4 +393,77 @@
         }
     }
 
+}
+
+.product-headings-lower {
+    .description-content {
+        color: gray;
+    }
+
+    .div-flex-info {
+        justify-content: left;
+        display: flex;
+        align-items: center;
+        font-family: fantasy;
+        color: gray;
+        margin-top: 50px;
+        margin-left: 70px;
+        border-bottom: 2px solid gainsboro;
+        margin-right: 70px;
+        transform: $tranform;
+
+        h5:hover {
+            color: black;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+
+    .square-icon {
+        width: 8px;
+        transform: $tranform;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .selected-heading {
+        color: black;
+    }
+}
+.product-section-page{
+    .product-section-class{
+        margin-bottom: 60px;
+    }
+}
+
+.product-content-lower {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin: 40px 70px 70px 70px;
+
+    .faq-product-section {
+        margin-top: 40px;
+
+        .faq-heading {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        font-weight: 400;
+        font-family: system-ui;
+    }
+
+    
 }

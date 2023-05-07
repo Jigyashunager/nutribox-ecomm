@@ -64,7 +64,7 @@ const LatestDeals = () => {
           className="latest-deals-slider"
         >
            {myCustomData?.data.map((product, index) => (
-            <SwiperSlide key={product.image}>
+            <SwiperSlide key={product.id}>
             <div className="product-card">
               <div className="product-image">
                 <Link href={'/product'}><Image 
@@ -82,7 +82,7 @@ const LatestDeals = () => {
                 />
                 <PopupModal product={product}/>
               </div>
-              <div key={index} className="product-info">
+              <div className="product-info">
                 <h6>Category</h6>
                 <Link href={'/product'}><h4 className="two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn

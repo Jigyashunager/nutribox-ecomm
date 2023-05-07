@@ -15,6 +15,7 @@ import PopupModal from '@/shared/homepage-shared/popup-modal';
 import PaginationRounded from '@/shared/productpage-shared/pagination';
 import Footer from '@/shared/homepage-shared/footer';
 import Link from "next/link";
+import SideCart from '@/shared/homepage-shared/sideCart';
 
 const Shop = () => {
   const [value, setValue] = useState<number>(2);
@@ -270,7 +271,7 @@ const Shop = () => {
         </div>
       </div>
       <Footer/>
-
+            <SideCart setProduct={""}/>
     </>
   )
 }

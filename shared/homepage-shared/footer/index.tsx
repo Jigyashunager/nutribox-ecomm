@@ -5,6 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import PinterestIcon from '@mui/icons-material/Pinterest';
+import Link from 'next/link';
 
 const Footer = () => {
     return (
@@ -57,7 +58,7 @@ const Footer = () => {
                     <h5>Quick Links</h5>
                     <h6>Search</h6>
                     <h6>Become a Reseller</h6>
-                    <h6>About Us</h6>
+                    <Link href={'/aboutus'}><h6>About Us</h6></Link>
                     <h6>Contact Us</h6>
                 </div>
                 <div className='footer-content'>    

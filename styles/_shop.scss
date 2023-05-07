@@ -1,6 +1,7 @@
 div#__next {
-    overflow-x: unset;
-    overflow-y: hidden;}
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 .banner{
     margin-bottom: 0px;
@@ -223,6 +224,14 @@ div#__next {
             color: gray;
             cursor: pointer;
         }
+        .wishlist-icon-color{
+            position: absolute;
+            margin: -270px 0px 0px 240px;
+            height: 34px;
+            width: 25px;
+            color: #c60303;
+            cursor: pointer;
+        }
         img{
             margin-left: -15px;
         }
@@ -329,6 +338,9 @@ div#__next {
     margin-bottom: -24px;
   }
   .wishlist-icon{
+    margin: -246px 0px 0px  240px;
+  }
+  .wishlist-icon-color{
     margin: -246px 0px 0px  240px;
   }
 }

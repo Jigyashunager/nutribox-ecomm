@@ -1,0 +1,104 @@
+div#__next {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.about-us-banner{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.about-us{
+    .main-why-nutritrix{
+        margin-top: -20pc;
+        margin-left: -5pc;
+    }
+}
+.about-us-top{
+    margin: 0px 60px 0px 118px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77pc;
+    .square-box{
+        transform: skewX(-10deg);
+        border-radius: 5px;
+        background-color: #014a44;
+        display: block;
+        padding: 45px 0px 80px 0px;
+        top: -406px;
+        left: 37pc;
+        margin-bottom: 10px;
+        width: 8pc;
+        position: relative;
+     
+    }
+    .square-box-1{
+        transform: skewX(-10deg);
+        border-radius: 5px;
+        background-color: #014a44;
+        display: block;
+        padding: 45px 0px 80px 0px;
+        top: -413px;
+        left: 43pc;
+        margin-bottom: 10px;
+        width: 8pc;
+        position: relative;
+
+    }
+    h3{
+        margin-top: -44pc;
+        font-family: fantasy;
+        font-size: 60px;
+        transform: $tranform;
+        margin-bottom: 45px;
+    }
+    h4{
+        margin-bottom: 20px;
+    }
+    h5{
+        text-align: center;
+        font-size: 30px;
+    }
+    button{
+        border: 0px;
+        background-color: gainsboro;
+        padding: 7px;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+    button:hover{
+        color: white;
+        background-color: $text-color;
+    }
+    .years-experience{
+        background-color: #014a44;
+        width: 224px;
+        position: relative;
+        display: block;
+        padding: 5pc 0px 5pc 0px;
+        top: -534px;
+        transform: skewX(-10deg);
+        border-radius: 5px;
+        .over{
+            font-size: 25px;
+            font-family: fantasy;
+            color: white;
+            margin-left: 22px;
+        }
+        .years{
+            margin-left: 22px;
+            font-size: 130px;
+            margin-top: -43px;
+            margin-bottom: -20px;
+            font-family: fantasy;
+            color: white;
+        }
+        .experience{
+            margin-left: 22px;
+            font-size: 25px;
+            font-family: fantasy;
+            color: white;
+        }
+    }
+}

@@ -216,7 +216,7 @@ const Slider = ({ value }: { value: string }) => {
             </Swiper>
           </div>
         )
-      ) : value === "TRENDING NOW" ? "" : (
+      ) : value === "TRENDING NOW" ? "" : value === "SIMILAR PRODUCTS" ? "" : (
         <div className="main-slider">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
