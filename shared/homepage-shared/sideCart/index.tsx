@@ -12,7 +12,7 @@ const SideCart = ({ setProduct }: { setProduct: any }) => {
     document.addEventListener('click', (event) => {
       const targetElement = event.target as HTMLElement;
       const width = targetElement.offsetWidth;
-      if (width === 254 || width === 102 || width === 300 || width === 51 || width === 0 || width === 269 || width === 118 || width === 49 || width === 80 || width === 293 || width === 139 || width === 202 || width === 102 || width === 352 || width === 315 ) {
+      if (width === 254 || width === 102 || width === 300 || width === 51 || width === 269 || width === 118 || width === 49 || width === 80 || width === 293 || width === 139 || width === 202 || width === 102 || width === 352 || width === 315 ) {
         setCloseState(true)
       }
       else {

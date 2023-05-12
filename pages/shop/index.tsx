@@ -109,7 +109,7 @@ const Shop = () => {
           <div className="left-popular-categories-list">
           <div className="left-product-card">
               <div className="left-product-image">
-                <Link href={'/product'}><Image 
+                <Link href={'/product/product-name'}><Image 
                   alt="nutritrix"
                   src="https://i.ibb.co/x8bNrqy/maxPC.jpg"
                   width={100}
@@ -118,7 +118,7 @@ const Shop = () => {
                 /></Link>
               </div>
               <div className="left-product-info">
-              <Link href={'/product'}><h4 className="left-two-line-text">
+              <Link href={'/product/product-name'}><h4 className="left-two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn
                 </h4>
                 <div className="left-stars-rating">
@@ -138,7 +138,7 @@ const Shop = () => {
           
           <div className="left-product-card">
               <div className="left-product-image">
-                <Link href={'/product'}><Image 
+                <Link href={'/product/product-name'}><Image 
                   alt="nutritrix"
                   src="https://i.ibb.co/Tck0tF8/naturePC.jpg"
                   width={100}
@@ -147,7 +147,7 @@ const Shop = () => {
                 /></Link>
               </div>
               <div className="left-product-info">
-              <Link href={'/product'}><h4 className="left-two-line-text">
+              <Link href={'/product/product-name'}><h4 className="left-two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn
                 </h4>
                 <div className="left-stars-rating">
@@ -167,7 +167,7 @@ const Shop = () => {
           
           <div className="left-product-card">
               <div className="left-product-image">
-                <Link href={'/product'}><Image 
+                <Link href={'/product/product-name'}><Image 
                   alt="nutritrix"
                   src="https://i.ibb.co/0nk9xzt/fusionPC.jpg"
                   width={100}
@@ -176,7 +176,7 @@ const Shop = () => {
                 /></Link>
               </div>
               <div className="left-product-info">
-              <Link href={'/product'}><h4 className="left-two-line-text">
+              <Link href={'/product/product-name'}><h4 className="left-two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn
                 </h4>
                 <div className="left-stars-rating">
@@ -224,7 +224,7 @@ const Shop = () => {
             <div key={product.id} >
             <div className="product-card">
               <div className="product-image">
-              <Link href={"/product"}><Image
+              <Link href={"/product/product-name"}><Image
                   alt="nutritrix"
                   src={product.image}
                   width={280}
@@ -242,7 +242,7 @@ const Shop = () => {
                 <PopupModal product={product}/>
                 <div>
                 <h6>Category</h6>
-                <Link href={'/product'}><h4 className="two-line-text">
+                <Link href={'/product/product-name'}><h4 className="two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn
                 </h4>
                 <div className="stars-rating">

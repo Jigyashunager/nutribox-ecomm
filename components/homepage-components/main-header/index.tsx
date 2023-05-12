@@ -427,36 +427,7 @@ function Header({ wishlistCount }: { wishlistCount: string}) {
               </Navbar.Collapse>
             </Navbar.Collapse>
             <div className="header-right">
-              <PersonOutlineIcon className="person-icon" />
-              <DropdownButton id="dropdown-basic-button" title="Sign In / Register" show={showLogin} onClick={() => dropDownShow(event)}>
-                <Dropdown.Item>
-                  <div>
-                    <div className="sign-in">
-                      <h4>Sign in</h4>
-                      <h4>Create an Account</h4>
-                    </div>
-                    <form className="form-login">
-                      <p className="form-tags">
-                        <label>
-                          Username or email
-                          <span>*</span>
-                        </label>
-                        <input placeholder="Username" />
-                      </p>
-                      <p className="form-tags">
-                        <label>
-                          Password
-                          <span>*</span>
-                        </label>
-                        <input placeholder="Password" />
-                      </p>
-                      <button>LOGIN</button>
-                      <p className="otp-line">Login/Sign Up with OTP</p>
-                      <p className="lost-password-line">Lost your password?</p>
-                    </form>
-                  </div>
-                </Dropdown.Item>
-              </DropdownButton>
+              <Authentication wishlistCount='2'/>
               <br />
               <div className="icons">
                 <FavoriteBorderIcon className="heart-icon" />

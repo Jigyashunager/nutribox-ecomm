@@ -175,6 +175,7 @@ $light-background-blue: #eaf7f6;
 
 .search-bg .nav-link {
     padding: 10px;
+    color: white;
 }
 
 .sports-category-list {
@@ -503,6 +504,7 @@ $light-background-blue: #eaf7f6;
         .otp-line:hover{
             color: #014a44;
         }
+        
         .lost-password-line{
             text-decoration: underline;
             text-align: right;
@@ -511,4 +513,15 @@ $light-background-blue: #eaf7f6;
     .form-tags{
         display: grid;
     }
+}
+
+.authentication{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: $text-color;
+    }
+    
 }

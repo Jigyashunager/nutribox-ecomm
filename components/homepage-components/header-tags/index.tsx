@@ -28,6 +28,9 @@ const PagesHeader = () => {
   const handleShopClick = () => {
     router.push('/shop');
   };
+  const handleBlogClick = () => {
+    router.push('/blogs');
+  };
 
   return (
     <>
@@ -387,6 +390,7 @@ const PagesHeader = () => {
               show={false}
               onMouseEnter={showDropdown}
               onMouseLeave={hideDropdown}
+              onClick={handleBlogClick}
             >
             </NavDropdown>
           </li>

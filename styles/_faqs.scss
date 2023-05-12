@@ -1,0 +1,46 @@
+.faqs{
+
+    .accordion {
+        width: 42pc;
+    }
+    .faqs-top{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-bottom: 50px;
+        .MuiButtonBase-root{
+            background-color: white;
+            font-weight: 700;
+        }
+        .css-1fjvggn-MuiPaper-root-MuiAccordion-root {
+            border-top: 1px solid gainsboro;
+            border-bottom:  1px solid gainsboro;
+            border-left: 0px;
+            border-right: 0px;
+            font-weight: 600;
+        }
+    }
+    .general-faqs{
+        margin-left: 60px;
+        p{
+            font-size: 14px;
+            width: 40pc;
+        }
+    }
+    .faqs-heading{
+        text-align: center;
+        margin-top: 100px;
+        font-family: fantasy;
+        display: flex;
+        align-items: center;
+        transform: $tranform;
+        font-size: 14px;
+        span{
+            margin-top: -8px;
+            color: #06645c;
+            font-weight: 900;
+            stroke: #06645c;
+            stroke-width: 4;
+        }
+    }
+}

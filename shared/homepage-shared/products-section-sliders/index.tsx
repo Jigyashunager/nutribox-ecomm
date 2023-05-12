@@ -115,7 +115,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
            <SwiperSlide key={index} >
             <div className="product-card">
               <div className="product-image">
-                <Link href={"/product"}><Image
+                <Link href={"/product/product-name"}><Image
                   alt="nutritrix"
                   src={product.image}
                   width={200}
@@ -132,7 +132,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
                 />
                 <PopupModal product={product}/>
                 <h6>Category</h6>
-                <Link href={"/product"}><h4 className="two-line-text">
+                <Link href={"/product/product-name"}><h4 className="two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn
                 </h4>
                 <div className="stars-rating">

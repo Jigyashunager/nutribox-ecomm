@@ -1,0 +1,98 @@
+.my-account{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    h4{
+        transform: $tranform;
+        font-size: 24px;
+        font-family: fantasy;
+        margin-bottom: 50px;
+    }
+    span{
+        color: $text-color;
+        padding-left: 10px;
+    }
+    .form-login{
+        margin-top: 5px;
+        margin-bottom: -20px;
+        width: 30pc;
+        label{
+            color: #686868;
+            margin-bottom: 3px;
+        }
+        input{
+            padding-left: 10px;
+            padding: 10px;
+            border: 1px solid gainsboro;
+            margin-bottom: 15px;
+        }
+        button{
+            width: 30pc;
+            margin-top: 20px;
+            margin-left: 3px;
+            transform: $tranform;
+            padding: 13px 119px 13px 119px;
+        }
+        button:hover{
+            background-color: #014a44;
+            color: white;
+        }
+        .otp-line{
+            text-align: center;
+            margin-top: 3px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .otp-line:hover{
+            color: #014a44;
+        }
+        
+        .lost-password-line{
+            text-decoration: underline;
+            text-align: right;
+        }
+    }
+    .signup-form{
+        margin-right: 140px;
+    }
+    .form-tags{
+        display: grid;
+        width: 30pc;
+    }
+    .remember-lost{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            svg{
+                margin-left: -12px;
+                font-size: 18px;
+            }
+        }
+        h5{
+            font-size: 15px;
+            margin-top: 2px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: $text-color;
+    }
+    .otp-form{
+        .sign-in-otp{
+            margin-top: 0px;
+        }
+        h4{
+            margin-top: 0px;
+        }
+        button{
+            margin-top: 47px;
+        }
+    }
+    
+}

@@ -2,6 +2,8 @@ import React from 'react'
 import Image from "next/image";
 import Header from '@/components/homepage-components/main-header';
 import WhyNutritrix from '@/shared/homepage-shared/whynutritrix';
+import InfluencerSlider from '@/shared/productpage-shared/influencers';
+import Footer from '@/shared/homepage-shared/footer';
 
 const AboutUs = () => {
     return (
@@ -42,6 +44,8 @@ const AboutUs = () => {
             </div>
         </div>
         <WhyNutritrix/>
+        <InfluencerSlider/>
+        <Footer/>
         </div>
     )
 }

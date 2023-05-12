@@ -1,0 +1,416 @@
+.blogs {
+    a{
+        text-decoration: none;
+        color: $text-color;
+    }
+    .MuiPagination-root{
+        margin-left: 57px !important;
+        width: 30pc;
+        button{
+            padding: 20px 15px 20px 15px;
+            border-radius: 0px !important;
+            font-size: 18px;
+            font-family: system-ui;
+            border: 1px solid gainsboro;
+        }
+        button:hover{
+            color: white;
+            background-color: $text-color;
+        }
+        .Mui-selected{
+            background-color: $text-color;
+            color: white;
+        }
+    }
+    
+    .blog-content{
+        display: flex;
+    }
+    .right-blog-list{
+        display: grid;
+        grid-template-columns: 270px 270px;
+        grid-row: auto auto;
+        grid-column-gap: 210px;
+        grid-row-gap: 10px;
+        margin-top: 60px;
+        .blog-card{
+          margin-left: 60px;
+          width: 17pc;
+          h6{
+            font-size: 22px;
+            width: 27pc;
+            transform: $tranform;
+            font-family: fantasy;
+            margin-bottom: 25px;
+            cursor: pointer;
+            color: black ;
+          }
+          h6:hover{
+            color: $text-color;
+
+          }
+        }
+        .tag-date{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-top: 15px;
+            .tag-blog{
+                font-size: 15px;
+                color: $text-color;
+                margin-right: 13px;
+            }
+            .square-icon{
+                font-size: 6px;
+                margin-top: -4px;
+                color: rgb(152, 150, 150);
+                transform: $tranform;
+            }
+            .date-blog{
+                font-size: 15px;
+                color: rgb(152, 150, 150);
+                svg{
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+    }
+
+    .left-shop-page-content{
+        margin-top: 10px;
+        .left-blog-date{
+            h5{
+                font-size: 13px;
+                font-weight: 500;
+                color: rgb(164, 164, 164);
+            }
+        }
+        .left-bottom-image{
+            margin-left: 60px;
+            margin-top: 40px;
+        }
+        .left-blog-image{
+            margin-bottom: 12px;
+        }
+        .left-two-line-text{
+            margin-top: -15px;
+            color: black;
+        }
+        .left-two-line-text a:hover{
+            color: $text-color;
+        }
+        .arrow-span-filter{
+            margin-right: 10px;
+            margin-top: -10px;
+            color: #06645c;
+            font-weight: 900;
+            stroke: #06645c;
+            stroke-width: 4;
+            svg{
+                width: 15px;
+                position: relative;
+                top: 34px;
+                right: 295px;
+            }
+        }
+    }
+    
+    .search-blog-input{
+        font-family: system-ui, -apple-system;
+        text-align: left;
+        margin-left: 60px;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        padding: 7px 160px 7px 0px;
+        transform: skewX(-10deg);
+        margin-bottom: 60px;
+        border-bottom: 2px solid gainsboro;
+    }
+    .search-blog{
+        display: flex;
+        margin-bottom: -50px;
+        button{
+            transform: skewX(-10deg);
+            border: 0px;
+            padding: 0px 21px 0px 21px;
+            margin-left: -95px;
+            background-color: #014a44;
+            color: white;
+            height: 30px;
+            border-radius: 2px;
+            font-family: system-ui;
+        }
+        input:focus-visible{
+            outline: 0px;
+            border-bottom: 2px solid $text-color;
+            transition: 0.3s;
+        }
+    }
+    .page-distribution-heading {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: $margin-page-large-content;
+        margin-bottom: -20px;
+        margin-top: 40px;
+        svg {
+            margin: 0px 10px 9px 10px;
+            font-size: 12px;
+        }
+
+        h5 {
+            font-size: 15px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h6:hover {
+            color: $text-color;
+        }
+
+        h6 {
+            color: gainsboro;
+            font-size: 15px;
+
+        }
+    }
+}
+
+.single-blog{
+    display: flex;
+    .right-content-single-blog{
+        margin-left: 80px;
+        margin-top: 50px;
+        margin-right: 70px;
+        .person-comment-icon{
+            font-size: 70px
+        }
+        .comment-inner-text{
+            background-color: gainsboro;
+            margin-bottom: 20px;
+            padding: 15px 0px 0px 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .comments-main-list{
+            margin-left: -37px;
+            list-style: none;
+            .comment-content{
+                display: flex;
+                margin-top: 30px;
+                button{
+                    padding: 4px 10px 4px 4px;
+                    border: 0px;
+                    border-radius: 4px;
+                    transform: $tranform;
+                    margin-right: 40px;
+                    background-color: #014a44;
+                    color: white;
+                }
+            }
+            .comments-inner-list{
+                list-style: none;
+            }
+        }
+        .num-comments{
+            font-size: 28px;
+            transform: $tranform;
+            font-family: fantasy;
+        }
+        .next-prev-blog{
+            display: flex;
+            margin-top: 40px;
+            border-bottom: 1px solid gainsboro;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            h6{
+                font-size: 13px;
+                font-weight: 500;
+                color: rgb(125, 125, 125);
+                letter-spacing: 2px;
+            }
+            h5{
+                font-size: 15px;
+                width: 22pc;
+            }
+            svg{
+                font-size: 10px;
+                margin-top: -3px;
+            }
+            .next-blog{
+                display: flex;
+                text-align: end;
+                svg{
+                    margin-left: 8px;
+                }
+                .next-title{
+                    margin-right: 20px;
+                }
+            }
+            .prev-blog{
+                display: flex;
+                svg{
+                    margin-right: 5px;
+                }
+                .prev-title{
+                    margin-left: 20px;
+                }
+            }
+        }
+        .author-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            box-shadow: 1px 1px 10px 1px #888888;
+            padding: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 2px;
+        }
+        .author-image{
+            font-size: 150px;
+        }
+        .about-author-heading{
+            font-family: fantasy;
+            transform: $tranform;
+            font-size: 22px;
+        }
+        .tags-flex{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-left: -7px;
+            margin-top: 60px;
+            p{
+                padding: 3px 13px 3px 13px;
+                border-radius: 3px;
+                font-size: 14px;
+            }
+        }
+        .blog-para::first-letter {
+            font-size: 3em; /* adjust the size as needed */
+            line-height: 0.9; /* adjust the line-height to fit the enlarged letter */
+            float: left;
+            margin-right: 4px; /* float the letter to the left to create the desired effect */
+          }
+          
+        .blog-para{
+            margin-top: 30px;
+            line-height: 24px;
+            color: black;
+            .inside-blog-images{
+                display: contents;
+                img{
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+
+                }
+                .inside-blog-image-1{
+                    margin-right: 30px;
+                }
+            }
+            .quote{
+                font-size: 30px;
+                }
+            .quote-author{
+                color: #888888;
+            }
+            p{
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+        }
+        .main-blog-heading{
+            font-family: fantasy;
+            transform: $tranform;
+            font-size: 50px;
+            margin-bottom: 25px;
+        }
+        .tag-date{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            .tag-blog{
+                font-size: 15px;
+                color: $text-color;
+                margin-right: 13px;
+            }
+            .square-icon{
+                font-size: 6px;
+                margin-top: -4px;
+                color: rgb(152, 150, 150);
+                transform: $tranform;
+            }
+            .date-blog{
+                font-size: 15px;
+                color: rgb(152, 150, 150);
+                svg{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.blog-form{
+    .blog-form-heading{
+        h5{
+        transform: $tranform;
+        font-family: fantasy;
+        font-size: 24px;
+    }
+}
+    .blog-form-content{
+        h5{
+            font-size: 16px;
+            font-weight: 500;
+            color: #888888;
+            margin-top: 20px;
+        }
+        button{
+            border: 0px;
+            padding: 13px;
+            background-color: gainsboro;
+            color: $text-color;
+            font-weight: 500;
+            transform: $tranform;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        button:hover{
+            background-color: #014a44;
+            color: white;
+        }
+        .checkbox-save{
+            margin-left: -10px;
+            span{
+                margin-top: -3px;
+            }
+        }
+        textarea{
+            width: 97.8%;
+            border: 1px solid gainsboro;
+            margin-top: 20px;
+            border-radius: 3px;
+            padding: 10px 0px 20px 15px;
+        }
+        .inputs{
+            margin-top: 30px;
+            input{
+                margin-right: 20px;
+                border: 1px solid gainsboro;
+                padding: 15px 111px 15px 14px;
+                border-radius: 3px;
+            }
+        }
+        
+    }
+}

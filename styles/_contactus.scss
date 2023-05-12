@@ -1,0 +1,148 @@
+.contactus-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    background-color: rgb(236, 236, 236);
+    padding: 40px 0px 60px 0px;
+    
+    .contact-us-banner{
+        border-radius: 10px;
+        margin-right: 60px;
+    }
+    .get-in-touch{
+        margin-top: 20px;
+        background-color: white;
+        padding: 40px;
+        margin-left: 30px;
+        .open-time{
+            border-bottom: 0px;
+            svg{
+                margin-right: 16px;
+            }
+        }
+        .time{
+             margin-left: 40px;
+        }
+        div{
+            border-bottom: 1px solid gainsboro;
+        }
+        h4{
+            font-family: fantasy;
+            font-size: 24px;
+            transform: $tranform;
+            margin-bottom: 20px;
+        }
+        svg{
+            color: $text-color;
+            margin-top: -3px;
+            margin-right: 10px;
+        }
+        p{
+            margin-left: 37px;
+        }
+        h5{
+            margin-top: 20px;
+            font-size: 16px;
+
+        }
+    }
+    .about-us-top-middle{
+        margin-top: 20px;
+        h6{
+            font-size: 16px;
+            color: $text-color;
+        }
+        h5{
+            font-size: 50px;
+            transform: $tranform;
+            width: 30pc;
+            font-family: fantasy;
+        }
+        p{
+            margin-top: 30px;
+            width: 30pc
+        }
+        button{
+            margin-top: 30px;
+            border: 0px;
+            color: $text-color;
+            background-color: gainsboro;
+            font-weight: 500;
+            padding: 10px 15px 10px 15px;
+            transform: $tranform;
+            border-radius: 4px;
+        }
+        button:hover{
+            background-color: $text-color;
+            color: white;
+        }
+    }
+}
+
+.contactus{
+    .contact-form-content{
+        margin-left: 60px;
+        h5{
+            margin-top: 30px;
+        }
+        .inputs{
+            display: grid;
+            input{
+            padding: 15px 111px 15px 14px;
+            margin-top: 30px;
+            width: 36pc;
+            border: 1px solid gainsboro;
+            border-radius: 4px;
+        }
+        }
+        button{
+            border: 0px;
+            padding: 13px;
+            background-color: gainsboro;
+            color: $text-color;
+            font-weight: 500;
+            transform: $tranform;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        button:hover{
+            background-color: #014a44;
+            color: white;
+        }
+        textarea{
+            width: 36pc;
+            border: 1px solid gainsboro;
+            margin-top: 30px;
+            border-radius: 3px;
+            padding: 10px 0px 20px 15px;
+        }
+        .checkbox-save{
+            margin-left: -10px;
+            font-size: 14px;
+            span{
+                margin-top: -3px;
+            }
+        }
+    }
+    .map-feedback{
+        display: flex;
+    }
+    .contactus-heading{
+        text-align: center;
+        margin-top: 100px;
+        font-family: fantasy;
+        display: flex;
+        align-items: center;
+        transform: $tranform;
+        font-size: 14px;
+        margin-left: 60px;
+        span{
+            margin-top: -8px;
+            color: #06645c;
+            font-weight: 900;
+            stroke: #06645c;
+            stroke-width: 4;
+        }
+    }
+}

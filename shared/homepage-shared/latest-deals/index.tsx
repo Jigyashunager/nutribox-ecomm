@@ -67,7 +67,7 @@ const LatestDeals = () => {
             <SwiperSlide key={product.id}>
             <div className="product-card">
               <div className="product-image">
-                <Link href={'/product'}><Image 
+                <Link href={'/product/product-name'}><Image 
                   alt="nutritrix"
                   src={product.image}
                   width={230}
@@ -84,7 +84,7 @@ const LatestDeals = () => {
               </div>
               <div className="product-info">
                 <h6>Category</h6>
-                <Link href={'/product'}><h4 className="two-line-text">
+                <Link href={'/product/product-name'}><h4 className="two-line-text">
                   Optimum Nutrition Gold Standard 100% Whey Proteinn
                 </h4>
                 <div className="stars-rating">

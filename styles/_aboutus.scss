@@ -3,6 +3,60 @@ div#__next {
     overflow-y: hidden;
 }
 
+
+.influencer-slider{
+    .blog-main-heading{
+        font-family: fantasy;
+        transform: $tranform;
+    }
+    .main-slider-offer{
+        margin: 70px 75px 0px 82px;
+        .blog-image{
+            filter: grayscale(100%);
+            cursor: pointer;
+            .social-icons{
+                position: relative;
+                left: 295px;
+                display: none;
+                top: 190px;
+                color: white;
+                svg{
+                    margin-bottom: 20px;
+                    background-color: #014a44;
+                    border-radius: 50%;
+                    padding: 4px;
+                }
+            }
+        }
+        .blog-image:hover{
+            filter: none;
+            .social-icons{
+                margin-top: -176px;
+                position: relative;
+                left: 295px;
+                display: grid;
+                top: 190px;
+                color: white;
+            }
+        }
+        
+    }
+    .influencer-heading{
+        background-color: #014a44;
+        width: 10pc;
+        text-align: center;
+        margin-left: 20px;
+        margin-top: -40px;
+        padding: 1px 5px 1px 5px;
+        transform: $tranform;
+        border-radius: 5px;
+        h6{
+            color: white;
+            font-weight: 700;
+        }
+        color: white;
+    }
+}
 .about-us-banner{
     margin-left: 60px;
     margin-right: 60px;
@@ -10,7 +64,14 @@ div#__next {
 .about-us{
     .main-why-nutritrix{
         margin-top: -20pc;
-        margin-left: -5pc;
+        margin-left: 35px;
+        margin-right: 35px;
+        background: rgb(238, 236, 236);
+        padding-bottom: 50px;
+        margin-bottom: 10px;
+        .reviews-main{
+            width: 555px;
+        }
     }
 }
 .about-us-top{
