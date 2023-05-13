@@ -7,7 +7,6 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const LostPassword = () => {
   return (
     <>
-    <Header wishlistCount='2'/>
     <div className='page-distribution-heading'>
                 <Link href="/"><h6>Homepage</h6> </Link>
                 <span><ArrowForwardIosIcon /></span>
@@ -26,7 +25,6 @@ const LostPassword = () => {
                 <button>RESET PASSWORD</button>
             </div>
     </div>
-    <Footer/>
 
     </>
   )

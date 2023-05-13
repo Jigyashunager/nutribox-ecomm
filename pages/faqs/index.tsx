@@ -11,7 +11,6 @@ const FAQs = () => {
   return (
     <div className='faqs'>
         <div>
-            <Header wishlistCount='2' />
             <div>
                 <Image
                     alt="nutritrix"
@@ -51,7 +50,6 @@ const FAQs = () => {
                 </div>
             </div>
         </div>
-        <Footer/>
         </div>
   )
 }

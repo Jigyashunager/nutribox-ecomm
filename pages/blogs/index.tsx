@@ -11,7 +11,6 @@ import LeftBlogContent from '@/shared/productpage-shared/left-blog-content';
 const Blogs = () => {
   return (
     <div className='blogs'>      
-        <Header wishlistCount='2'/>
         <div className='page-distribution-heading'>
         <Link href="/"><h6>Homepage</h6> </Link>
         <span><ArrowForwardIosIcon /></span>
@@ -186,7 +185,6 @@ const Blogs = () => {
       </div>
     </div>
     </div>
-    <Footer/>
     </div>
   )
 }

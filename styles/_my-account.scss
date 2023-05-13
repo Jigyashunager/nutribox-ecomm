@@ -83,6 +83,11 @@
     a:hover{
         color: $text-color;
     }
+    .text-danger{
+        position: absolute;
+        margin-top: 72px;
+        font-size: 12px;
+    }
     .otp-form{
         .sign-in-otp{
             margin-top: 0px;
@@ -91,7 +96,7 @@
             margin-top: 0px;
         }
         button{
-            margin-top: 47px;
+            margin-top: 27px;
         }
     }
     

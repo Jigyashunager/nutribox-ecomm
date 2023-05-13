@@ -16,7 +16,6 @@ import BlogForm from '@/shared/productpage-shared/blog-form';
 const SingleBlog = () => {
     return (
         <div>
-            <Header wishlistCount='2' />
             <div className='page-distribution-heading'>
                 <Link href="/"><h6>Homepage</h6> </Link>
                 <span><ArrowForwardIosIcon /></span>
@@ -190,7 +189,6 @@ const SingleBlog = () => {
                     <BlogForm/>
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }

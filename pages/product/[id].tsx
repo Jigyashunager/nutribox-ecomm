@@ -69,7 +69,6 @@ function Product({ product }: { product: any }) {
   return (
     <>
     <div className='product-section-page'>
-      <Header wishlistCount={"2"} />
       <div className='page-distribution-heading'>
         <Link href="/"><h6>Homepage</h6> </Link>
         <span><ArrowForwardIosIcon /></span>
@@ -327,7 +326,6 @@ function Product({ product }: { product: any }) {
       </div>
       <Reviews/>
       <SimilarProducts/>
-      <Footer />
       </div>
     </>
   );

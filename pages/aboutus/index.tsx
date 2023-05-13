@@ -9,7 +9,6 @@ const AboutUs = () => {
     return (
         <div className='about-us'>
         <div>
-            <Header wishlistCount='2' />
             <div>
                 <Image
                     alt="nutritrix"
@@ -45,7 +44,6 @@ const AboutUs = () => {
         </div>
         <WhyNutritrix/>
         <InfluencerSlider/>
-        <Footer/>
         </div>
     )
 }

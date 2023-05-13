@@ -34,6 +34,11 @@ $light-background-blue: #eaf7f6;
     z-index: 999;
     font-weight: 400;
     margin-right: 13px;
+    
+}
+
+.search-bg .dropdown-menu.show{
+    width: 978px;
 }
 
 #collasible-nav-dropdown:after {
@@ -114,7 +119,7 @@ $light-background-blue: #eaf7f6;
 
 .header-lists {
     .header-list-mains {
-        margin-right: 40px;
+        padding-right: 40px;
         font-weight: 500;
         font-size: 15px;
         color: gray;
@@ -196,12 +201,16 @@ $light-background-blue: #eaf7f6;
 }
 
 .categories-header {
+    
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     list-style: none;
-    margin-left: -32px;
-    margin-top: -8px;
+    width: 1008px;
+    position: relative;
+    left: -31px;
+    top: -8px;
+
 
     li {
         padding: 10px 21px 10px 19px;
@@ -218,7 +227,7 @@ $light-background-blue: #eaf7f6;
 }
 
 
-.dropdown-menu[data-bs-popper] {
+.dropdown-menu {
     width: 61pc;
     overflow: hidden;
     border: 0px;
@@ -265,8 +274,10 @@ $light-background-blue: #eaf7f6;
     }
 }
 
+
 .best-sellers-div .dropdown-menu {
-    min-width: 25rem !important;
+    width: 24pc;
+    height: 25pc;
     border: 0px !important;
     border-radius: 5px;
 
@@ -353,9 +364,7 @@ $light-background-blue: #eaf7f6;
     min-width: 63pc !important;
     border: 0px !important;
     border-radius: 5px;
-    margin-left: -70px;
     overflow-x: scroll;
-
 }
 
 .brands-logo {
@@ -409,6 +418,7 @@ $light-background-blue: #eaf7f6;
 .deals-div {
     .dropdown-menu {
         border: 0px;
+        width: 28pc;
     }
 }
 
@@ -444,7 +454,7 @@ $light-background-blue: #eaf7f6;
         right: 212px;
         top: 34px;
     }
-    .dropdown-menu[data-bs-popper] {
+    .dropdown-menu {
         border-radius: 0px;
         width: 20pc;
         top: 44px;
@@ -489,8 +499,7 @@ $light-background-blue: #eaf7f6;
             background-color: black;
             display: block;
             color: white;
-            padding: 0px 0px 0px 0px;
-            padding: 8px 119px 8px 119px;
+            margin-top: 20px;
         }
         button:hover{
             background-color: #014a44;
@@ -516,6 +525,9 @@ $light-background-blue: #eaf7f6;
 }
 
 .authentication{
+    .text-danger{
+        font-size: 12px;
+    }
     a{
         text-decoration: none;
         color: black;
@@ -523,5 +535,18 @@ $light-background-blue: #eaf7f6;
     a:hover{
         color: $text-color;
     }
+    // button{
+    //     margin-top: 20px;
+    // }
     
+    
+}
+
+.otp-main-form button{
+    padding: 8px 112px 8px 112px;
+}
+
+.login-button{
+    padding: 8px 119px 8px 119px;
+
 }

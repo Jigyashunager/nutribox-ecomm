@@ -34,7 +34,6 @@ const Shop = () => {
   }
   return (
     <>
-      <Header wishlistCount={"2"} />
       <div className='page-distribution-heading'>
         <Link href="/"><h6>Homepage</h6> </Link>
         <span><ArrowForwardIosIcon /></span>
@@ -224,7 +223,7 @@ const Shop = () => {
             <div key={product.id} >
             <div className="product-card">
               <div className="product-image">
-              <Link href={"/product/product-name"}><Image
+              <Link href={"/product/product-name"} as={"image"}><Image
                   alt="nutritrix"
                   src={product.image}
                   width={280}
@@ -270,7 +269,6 @@ const Shop = () => {
 
         </div>
       </div>
-      <Footer/>
             <SideCart setProduct={""}/>
     </>
   )

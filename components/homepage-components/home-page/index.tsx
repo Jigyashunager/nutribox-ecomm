@@ -30,7 +30,6 @@ const Homepage = () => {
 
   return (
     <>
-      <Header wishlistCount={wishlistCount}/>  
       <Slider value="" />
       <Categories/>
       <SideCart setProduct={sideCartState}/>
@@ -47,7 +46,7 @@ const Homepage = () => {
       <Brands/>
       <WhyNutritrix/>
       <BlogSlider/>
-      <Footer/>      
+      {/* <Footer/>       */}
     </>
   );
 };

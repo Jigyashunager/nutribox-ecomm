@@ -8,7 +8,10 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import WatchLaterOutlinedIcon from '@mui/icons-material/WatchLaterOutlined';
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Checkbox from '@mui/material/Checkbox';
-import GoogleMaps from '@/shared/google-maps';
+import dynamic from 'next/dynamic';
+const Map = dynamic(() => import('@/shared/map-leaflet'), {
+    ssr: false
+})
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -16,7 +19,6 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const ContactUs = () => {
     return (
         <div className='contactus'>
-            <Header wishlistCount='2' />
             <div className='contactus-top'>
                 <Image
                     alt="nutritrix"
@@ -75,11 +77,9 @@ const ContactUs = () => {
                     </div>
                 </div>       
                 </div>
-                <GoogleMaps/>
-
+                <Map/>
                 </div>
 
-            <Footer />
         </div>
     )
 }

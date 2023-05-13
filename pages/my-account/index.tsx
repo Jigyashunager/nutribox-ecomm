@@ -5,13 +5,32 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Link from 'next/link';
 import Checkbox from '@mui/material/Checkbox';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import regexContants from '@/config/regexConstants/regexContants';
+import LostPasswordForm from '@/shared/lost-password-form';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
+type FormValues = {
+  email: string;
+  password: string;
+};
+
 const MyAccount = () => {
+  const { register, handleSubmit, reset, setValue, formState: { errors } } = useForm<FormValues>();
+
+  const onSubmit: SubmitHandler<FormValues> = async (data: any, event: any) => {
+    event.preventDefault()
+    console.log(data)
+  }
+
+  const validateMessage = (condition: boolean, message: string | undefined) => {
+    if (condition) {
+        return message;
+    }
+  }
+
   return (
     <div>
-      <Header wishlistCount='2'/>
       <div className='page-distribution-heading'>
                 <Link href="/"><h6>Homepage</h6> </Link>
                 <span><ArrowForwardIosIcon /></span>
@@ -22,51 +41,41 @@ const MyAccount = () => {
                     <div className="sign-in">
                       <h4>REGISTER</h4>
                     </div>
-                    <form className="form-login">
-                      <p className="form-tags">
+                    <form onSubmit={handleSubmit(onSubmit)} className="form-login">
+                      <div className="form-tags">
                         <label>
                           Email address
                           <span>*</span>
                         </label>
-                        <input placeholder="Enter your email address..." />
-                      </p>
-                      <p className="form-tags">
+                        <input placeholder="Enter your email address..." {...register('email', {
+                        required: true, pattern: regexContants.EMAIL,
+                      })} />
+                      <div className="text-danger font-weight-bold small">
+                        {validateMessage(errors?.email?.type === "required", "Please Enter Email")}
+                        {validateMessage(errors?.email?.type === "pattern", "Please Enter Valid Email")}
+                      </div>
+                      </div>
+                      <div className="form-tags">
                         <label>
                           Password
                           <span>*</span>
                         </label>
-                        <input placeholder="Enter your password.." />
-                      </p>
+                        <input placeholder="Enter your password.." {...register('password', {
+                        required: true
+                      })}/>
+                      <div className="text-danger font-weight-bold small">
+                        {validateMessage(errors?.password?.type === "required", "Please Enter Password")}
+                      </div>
+                      </div>
                       <div className='remember-lost'>
                         <h5 className='checkbox-save'><Checkbox {...label} />Remember Me</h5>
                         <Link href={'/my-account/lost-password'}><p className="lost-password-line">Lost your password?</p></Link>
                       </div>
-                      <button>REGISTER</button>
+                      <button type='submit'>REGISTER</button>
                       </form>
               </div>
-              <div className='otp-form'>
-              <div className="sign-in-otp">
-                      <h4>LOGIN OR SIGN-UP</h4>
-                    </div>
-                    <form className="form-login">
-                      <p className="form-tags">
-                        <label>
-                          Phone Number
-                          <span>*</span>
-                        </label>
-                        <input placeholder="Enter your phone number..." />
-                      </p>
-                      <p>
-                        An OTP will be sent to your phone number.
-                      </p>
-                      <p>
-                        Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.
-                      </p>
-                      <button>GET OTP</button>
-                      </form>
-              </div>
+              <LostPasswordForm/>
       </div>
-      <Footer/>
     </div>
   )
 }
