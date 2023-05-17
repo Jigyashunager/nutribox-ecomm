@@ -12,11 +12,10 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Slider from "@/shared/homepage-shared/slider";
 import myCustomData from "@/json-data/data.json";
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import PopupModal from "../popup-modal";
-import SideCart from "../sideCart";
 import Link from "next/link";
+import PopupModal from "@/shared/homepage-shared/popup-modal";
 
-const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { heading: string, handleButtonClick: Function, handleSideCart: Function }) => {
+const MobileProductsSection = ({ heading, handleButtonClick, handleSideCart }: { heading: string, handleButtonClick: Function, handleSideCart: Function }) => {
   const [selected, setSelected] = useState<string>("");
   const [value, setValue] = useState<number>(2);
   const [defaultValue, setDefaultValue] = useState<boolean>(true);
@@ -57,7 +56,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
   
   return (
     <>
-    <div >
+            <div className="mobile-product-section">
       <div className="product-section-class">
         <div className="popular-categories-heading">
           <h2>
@@ -70,43 +69,13 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
               />
             </span>
           </h2>
-
-          {heading !== "TRENDING NOW" && heading !== "SIMILAR PRODUCTS" && heading === "LATEST_DEALS" ? <div className="products-section">
-            <h4
-              className={
-                defaultValue || selected === "featured"
-                  ? "selected-heading"
-                  : ""
-              }
-              onClick={() => setSelected("featured")}
-            >
-              FEATURED PRODUCTS
-            </h4>
-            <h4
-              className={selected === "rated" ? "selected-heading" : ""}
-              onClick={() => {
-                setSelected("rated");
-                setDefaultValue(false);
-              }}
-            >
-              TOP RATED
-            </h4>
-            <h4
-              className={selected === "seller" ? "selected-heading" : ""}
-              onClick={() => {
-                setSelected("seller");
-                setDefaultValue(false);
-              }}
-            >
-              BEST SELLER
-            </h4>
-          </div>: ""}
+          </div>
         </div> 
 
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={0}
-          slidesPerView={5}
+          slidesPerView={2}
           // onSlideChange={() => console.log("slide change")}
           // onSwiper={(swiper) => console.log(swiper)}
           navigation={true}
@@ -119,8 +88,8 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
                 <Link href={"/product/product-name"}><Image
                   alt="nutritrix"
                   src={product.image}
-                  width={200}
-                  height={200}
+                  width={620}
+                  height={620}
                   priority
                   className="product-card-image"
                 />
@@ -159,10 +128,8 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
           ))}
         </Swiper>
       </div>
-      {heading === "LATEST-DEALS" ? '' : <Slider value={heading}/>}
-      </div>
     </>
   );
 };
 
-export default ProductsSection;
+export default MobileProductsSection;

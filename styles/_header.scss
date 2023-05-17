@@ -550,3 +550,124 @@ $light-background-blue: #eaf7f6;
     padding: 8px 119px 8px 119px;
 
 }
+
+.desktop-header{
+    display: block;
+}
+
+.mobile-header{
+    display: none;
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .desktop-header {
+      display: none; /* Hide on smaller screens */
+    }
+
+    body{
+        padding-right: 0px !important;
+    }
+  
+    .mobile-header {
+      display: flex;  /* Show on smaller screens */
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      height: 190px;
+        .zero{
+            margin-left: 13px;
+            font-size: 30px;
+            font-weight: 700;
+            top: 0px;
+            left: 2px;
+            position: relative;
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: #C60303;
+            left: -45px;
+            top: 40px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .arrow-icon{
+            font-size: 70px;
+            padding-right: 30px;
+        }
+        .logo-image{
+            margin-top: 20px;
+        }
+        .mobile-left-drawer{
+            svg{
+                color: white;
+                font-size: 100px;
+            }
+        }
+        .icons{
+            display: flex;
+            align-items: baseline;
+            svg{
+                font-size: 100px;
+                color: white;
+            }
+        }
+    }
+    .main-drawer{
+        .drawer-head{
+            display: flex;
+            margin-top: 40px;
+        
+            .underline{
+                border-bottom: 10px solid $text-color;
+                padding-bottom: 50px;
+            }
+            h2{
+                margin-right: 150px;
+                margin-left: 50px;
+                font-size: 70px;
+            }
+        }
+        .left-drawer-list{
+            span{
+            font-size: 55px;
+            margin-bottom: 20px;  
+            margin-top: 20px;      
+            padding-left: 40px;
+            padding-right: 30px;
+            }    
+        }
+        .left-drawer-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #aaded9;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            svg{
+                margin-left: 20px;
+                font-size: 100px;
+            }
+        }
+        .arrow-icon{
+            font-size: 70px;
+            padding-right: 30px;
+        }
+        .left-drawer-button{
+            padding: 30px 40px 30px 40px;
+            color: $text-color;
+            font-size: 50px;
+            background-color: white;
+            border-radius: 8px;
+            font-weight: 700;
+            margin-right: 80px;
+        }
+    }
+
+    
+  }

@@ -90,3 +90,110 @@
 .float-right{
    box-shadow: 0px 0px 0pc 75pc #0a0a0ab1;
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .modal.fade .modal-dialog{
+        max-width: 78pc !important;
+        top: 250px !important;
+        left: 110px;
+    }
+    .modal-content{
+        top: -72px;
+    }
+    .modal-dialog .image-gallery-slide .image-gallery-image {
+        max-height: none !important;
+    }
+    .modal-backdrop {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    .product-right-modal{
+        margin-left: 70px;
+        width: 72pc;
+        .hover-up {
+            margin-top: 30px;
+            margin-left: 40px;
+            background-color: black;
+            padding: 10px 180px 10px 180px;
+            margin-left: 200px;
+        span{
+            font-size: 40px;
+            color: white;
+        }
+    }
+    .category{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+        .main-quantity-box {
+            width: 18.5pc;
+            margin-top: 30px;
+            .plus .MuiSvgIcon-root{
+                position: relative;
+                top: -5px;
+                bottom: 0px;
+                left: 60px;
+            }
+           
+            p{
+                font-size: 60px;
+                margin-top: 0px;
+                margin-left: 50px;
+            }
+            svg{
+                width: 4rem;
+                height: 4rem;
+            }
+            }
+        .product-top-modal{
+            margin-top: 30px;
+            h5{
+                font-size: 55px;
+            }
+        }
+        p{
+            font-size: 48px;
+        }
+        .stars-rating{
+            font-size: 40px;
+            margin-bottom: 40px;
+        }.stars{
+            font-size: 50px;
+        }
+        .product-price{
+            h5{
+                font-size: 60px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .modal-dialog{
+        .modal-content{
+            .div-flex{
+                display: grid;
+            }
+        }
+        .image-gallery-C, .image-gallery-right-nav {
+                    left: 68pc;
+        }
+        .image-gallery-left-nav{
+            left: 22px;
+        }
+       
+        .image-gallery-svg{
+            height: 80px !important;
+            width: 80px !important;
+            color: #014a44;
+        }
+        .image-gallery-slides{
+            width: 68pc;
+            height: 66pc;
+            margin-left: 60px;
+        }
+        .image-gallery-slide .image-gallery-image{
+            width: 100%;
+        }
+    }
+}

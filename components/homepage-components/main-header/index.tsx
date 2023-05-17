@@ -96,7 +96,7 @@ function Header({ wishlistCount }: { wishlistCount: string}) {
     }
 
   return (
-     <>
+     <div className="desktop-header">
         <HeaderHero />
         <Navbar collapseOnSelect className="navbar" expand="lg">
           <Container>
@@ -441,7 +441,7 @@ function Header({ wishlistCount }: { wishlistCount: string}) {
           </Container>
         </Navbar>
         <PagesHeader />
-      </> 
+      </div> 
   );
 }
 

@@ -699,3 +699,87 @@ div#__next {
         font-weight: 500;
     }
 }
+
+.mobile-product-section{
+    display: none;       
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .mobile-product-section{
+        display: block;
+        .popular-categories-heading{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            h2{
+                font-size: 70px;
+                font-weight: 700;
+            }
+            svg{
+                font-size: 40px;
+                margin-top: -10px;
+            }  
+        }
+        .swiper{
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+        .products-slider .swiper-slide{
+            width: 675px !important;
+            margin-left: 2px !important;
+        }
+        .product-section-class .swiper, .product-section-class swiper-container{
+            margin-left: 105px !important;
+        }
+        .product-card{
+            h6{
+                font-size: 40px;
+            }
+            h4{
+                margin-top: 40px;
+            }
+            .two-line-text{
+                font-size: 44px;
+                width: 38pc;
+            }
+            .stars-rating{
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+            .stars{
+                font-size: 40px;
+            }
+            .product-price{
+                margin-bottom: 40px;
+                h5{
+                    font-size: 50px;
+                }
+            }
+            .wishlist-icon{
+                margin: -600px 0px 0px 45px;
+                width: 80px;
+                height: 80px;
+            }
+            .wishlist-icon-color{
+                margin: -600px 0px 0px 45px;
+                width: 80px;
+                height: 80px;
+
+            }
+            .circle-quickview{
+                top: -590px;
+                left: 525px;
+                height: 70px;
+                width: 70px;
+                display: inline-flex;
+            }
+            .quickview-icon{
+                font-size: 45px !important;
+            }
+            .hover-up{
+                padding: 11px 150px 11px 150px;
+                .add-to-cart{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}

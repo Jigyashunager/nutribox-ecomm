@@ -1,12 +1,13 @@
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Slider = ({ value }: { value: string }) => {
+
   return (
     <>
       {value === "VITAMINS & MINERALS" ? (
@@ -217,7 +218,8 @@ const Slider = ({ value }: { value: string }) => {
           </div>
         )
       ) : value === "TRENDING NOW" ? "" : value === "SIMILAR PRODUCTS" ? "" : (
-        <div className="main-slider">
+        <div>
+        <div className="main-desktop-slider">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={1000}
@@ -276,6 +278,7 @@ const Slider = ({ value }: { value: string }) => {
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
         </div>
       )}
     </>

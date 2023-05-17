@@ -1,8 +1,3 @@
-
-.main-slider{
-    border-top: 1px solid $text-gray;
-}
-
 .swiper-pagination-bullet-active {
     background-color: $background !important;
 }
@@ -25,4 +20,27 @@
 .slider-image{
     width: -webkit-fill-available;
     height: auto;
+}
+
+.main-display-slider{
+    display: block;
+}
+
+.main-mobile-slider{
+    display: none;
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .main-desktop-slider{
+        display: none;
+    }
+    .main-mobile-slider{
+        display: block;
+        .swiper-pagination-bullet{
+            width: 30px !important;
+            height: 30px !important;
+            position: relative;
+            top: -15px;
+        }
+    }
 }
