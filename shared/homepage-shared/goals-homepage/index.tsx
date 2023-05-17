@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Image from "next/image";
 
-const Categories = () => {
+const Goals = () => {
   return (
-    <>
+    <div className='desktop-goals'>
       <div className="homepage-info-goals">
         <div className="goals-heading">
           <h2>FIND YOUR GOAL</h2>
@@ -63,8 +63,8 @@ const Categories = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Categories;
+export default Goals;

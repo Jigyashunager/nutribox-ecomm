@@ -57,7 +57,7 @@ const ProductsSection = ({ heading, handleButtonClick, handleSideCart }: { headi
   
   return (
     <>
-    <div >
+    <div className="desktop-product-slider">
       <div className="product-section-class">
         <div className="popular-categories-heading">
           <h2>

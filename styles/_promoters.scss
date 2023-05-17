@@ -1,0 +1,43 @@
+.mobile-promoters-footer{
+    display: none;
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+
+.mobile-promoters-footer{
+    display: block;
+    .padding-promoter{
+        padding: 40px 80px 40px 80px;
+    }
+    .promoter{
+        background-color: rgb(232, 232, 232);
+        padding: 40px;
+        border-radius: 14px;
+        display: flex;
+        h6{
+            font-size: 60px;
+            width: 50pc;
+        }
+        p{
+            font-size: 50px;
+        }
+        button{
+            font-size: 50px;
+            background-color: $text-color;
+            padding: 14px 30px 14px 30px;
+            color: white;
+            border-radius: 12px;
+            margin-top: 80px;
+        }
+        .promoter-img{
+            position: relative;
+            left: 40px;
+        }
+        .promoter-doctor-img{
+            position: relative;
+            top: -115px;
+            margin-bottom: -100px;
+        }
+    }
+}   
+}

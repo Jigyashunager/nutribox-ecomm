@@ -127,3 +127,50 @@
     transform: scaleY(0.1);
     // margin-top: 40PX;
 }
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .mobile-footer{
+        background-color: #151515;
+        margin-top: -40px;
+        .mobile-footer-contact-us{
+            h5{
+            color: whitesmoke;
+            font-size: 60px;
+            margin-left: 80px;
+            margin-top: 60px;
+            }
+        }
+        .logo-footer-image{
+            padding-top: 100px;
+            padding-left: 80px;
+        }
+        .slider-image{
+            width: 35pc;
+        }
+        .mobile-footer-middle{
+            display: grid;
+            grid-template-columns: 800px 800px;
+            grid-row-gap: 100px;
+            grid-column-gap: -80px;
+            margin-left: 80px;
+            margin-top: 80px;
+            .footer-content{
+
+                color: white;
+                width: 60pc;
+                a{
+                    text-decoration: none;
+                    
+                }
+                h5{
+                    font-size: 60px;
+                    color: whitesmoke;
+                }
+                h6{
+                    font-size: 50px;
+                    color: gray;
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,7 @@ const WhyNutritrix = () => {
     const [value, setValue] = useState<number>(5);
 
     return (
-        <>
+        <div className="desktop-why-nutritrix">
         <div className='main-why-nutritrix'>
             <div>
         <div className='headings-why-nutritrix'>
@@ -104,7 +104,7 @@ const WhyNutritrix = () => {
         </div>
         </div>
         </div>
-        </>
+        </div>
     )
 }
 

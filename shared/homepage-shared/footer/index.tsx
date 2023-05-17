@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <>
+        <div className='desktop-footer'>
         <div className='footer'>
             <div className='footer-top'>
                 <div className="footer-signup">
@@ -99,7 +99,7 @@ const Footer = () => {
             <div className='straight-line'></div>
             <h6 className='copyright'>Copyright © 2022 Nutritix. All rights reserved.</h6>
         </div>
-        </>
+        </div>
     )
 }
 

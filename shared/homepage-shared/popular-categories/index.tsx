@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const PopularCategories = () => {
   return (
-    <>
+    <div className="desktop-popular-categories">
       <div className="homepage-popular-categories">
         <div className="popular-categories-heading">
           <h2>POPULAR CATEGORIES</h2>
@@ -81,7 +81,7 @@ const PopularCategories = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

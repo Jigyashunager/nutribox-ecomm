@@ -17,7 +17,7 @@ const BundlePack = () => {
     };
   
     return (
-        <>
+        <div className='desktop-bundle'>
         <div className='main-bundle-content'>
         <div className='main-bundle-image'>
              <Image
@@ -85,7 +85,7 @@ const BundlePack = () => {
         </div>
         <div>
         </div>
-        </>
+        </div>
     )
 }
 

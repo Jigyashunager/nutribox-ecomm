@@ -5,7 +5,7 @@ import LatestDeals from "@/shared/homepage-shared/latest-deals";
 
 const BannerTwo = () => {
   return (
-    <>
+    <div className="desktop-banner-three">
     <div className="banner-three">
       <div>
       <div className="image-container">
@@ -59,7 +59,7 @@ const BannerTwo = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

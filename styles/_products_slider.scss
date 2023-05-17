@@ -50,18 +50,19 @@ swiper-container {
   margin-left: 85px !important;
   padding-right: 0px !important;
   padding-left: 18px !important;
-  
-  
+
+
 }
 
-.latest-deals-slider{
-  
-  .circle-quickview{
+.latest-deals-slider {
+
+  .circle-quickview {
     position: relative;
     top: -193px !important;
     left: 196px !important;
   }
 }
+
 .two-line-text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -83,7 +84,8 @@ swiper-container {
   display: flex;
   align-items: center;
   font-size: 15px;
-  span{
+
+  span {
     color: black;
   }
 }
@@ -141,8 +143,9 @@ swiper-container {
   display: flex;
   align-items: center;
   margin-left: 60px;
-  margin-bottom: 40px;  
-    h6 {
+  margin-bottom: 40px;
+
+  h6 {
     font-size: 14px;
     font-weight: 600;
     color: gray;
@@ -313,27 +316,30 @@ swiper-slide {
   display: flex;
 }
 
-.product-image a{
-    text-decoration: none;
-    color: black;
-}
-.product-image a:hover{
+.product-image a {
+  text-decoration: none;
   color: black;
 }
 
-.product-info a{
-    text-decoration: none;
-    color: black;
-}
-.product-info a:hover{
+.product-image a:hover {
   color: black;
 }
 
-.left-product-info a{
-    text-decoration: none;
-    color: black;
+.product-info a {
+  text-decoration: none;
+  color: black;
 }
-.left-product-info a:hover{
+
+.product-info a:hover {
+  color: black;
+}
+
+.left-product-info a {
+  text-decoration: none;
+  color: black;
+}
+
+.left-product-info a:hover {
   color: black;
 }
 
@@ -354,7 +360,7 @@ swiper-slide {
   top: 45% !important;
 }
 
-.circle-quickview{
+.circle-quickview {
   width: 23px;
   height: 23px;
   border-radius: 50%;
@@ -375,12 +381,219 @@ swiper-slide {
   font-size: 14px !important;
 }
 
-.swiper-slide:hover .circle-quickview{
+.swiper-slide:hover .circle-quickview {
   display: inline-flex !important;
 }
 
-.product-slider-class{
-  .circle-quickview{
+.product-slider-class {
+  .circle-quickview {
     display: inline-flex;
+  }
+}
+
+.mobile-banner{
+  display: none;
+}
+
+.single-ad-banner{
+  display: none;
+}
+
+.mobile-why-nutritrix{
+  display: none;
+}
+
+.mobile-brands{
+  display: none;
+}
+
+.desktop-footer{
+  display: block;
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+  .desktop-product-slider {
+    display: none;
+  }
+  .desktop-footer{
+    display: none;
+  }
+  .offer-img img{
+    border-radius: 15px;
+  }
+
+  .single-ad-banner{
+    display: block;
+  }
+  .desktop-banner{
+    display: none;
+  }
+  .desktop-popular-categories{
+    display: none;
+  }
+  .desktop-latest-deals{
+    display: none;
+  }
+  .desktop-banner-three{
+    display: none;
+  }
+  .desktop-bundle{
+    display: none;
+  }
+
+  .desktop-brands{
+    display: none;
+  }
+
+  .desktop-blogs{
+    display: none;
+  }
+
+  .mobile-brands{
+    display: block;
+    margin-bottom: 80px;
+    .mobile-brands-grid{
+      display: grid;
+      .mobile-brands-flex{
+        display: flex;
+      }
+      .brand-logo-image{
+        margin: 10px 70px 10px 70px;
+        border-radius: 70px;
+      }
+    }
+    .brands-main{
+      .brands-heading{
+        svg{
+          width: 40px !important;
+          height: 40px !important;
+          margin-top: 17px;
+        }
+        
+        h2{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+        font-size: 70px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .arrow-span{
+          margin-right: 10px;
+          margin-top: -10px;
+          color: #06645c;
+          font-weight: 900;
+          stroke: #06645c;
+          stroke-width: 4;
+          
+        
+        }
+       
+      }}
+
+    }
+  }
+  .desktop-why-nutritrix{
+    display: none;
+  }
+  .mobile-why-nutritrix{
+    display: block;
+    margin-top: 70px;
+    margin-bottom: 120px;
+    .pointers-why-nutritrix{
+      display: grid;
+      grid-template-columns: auto;
+      .inside-headings{
+        background-color: rgb(239, 238, 238);
+        padding: 60px 50px 60px 50px;
+        border-radius: 10px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: left;
+        width: 80pc;
+        margin-left: 30px;
+        svg{
+          font-size: 150px;
+          margin-right: 50px;
+        }
+        h5{
+          font-size: 50px;
+        }
+        p{
+          font-size: 40px;
+        }
+      }
+    }
+    .headings-why-nutritrix{
+      h2{
+        font-size: 70px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+      }
+      h6{
+        font-size: 50px;
+      }
+    }
+  }
+  .mobile-banner {
+    padding-top: 120px;
+    display: block;
+    padding-bottom: 100px;
+    .swiper {
+      margin-left: 78px;
+      margin-right: 70px;
+      .bannner-ad-three-content{
+        margin: -600px 0px 0px 50px;
+        h5{
+          font-size: 70px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h6{
+          font-size: 50px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          width: 26pc;
+        }
+        button{
+          background-color: black;
+          color: white;
+          font-size: 42px;
+          margin-top: 20px;
+          padding: 10px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          border-radius: 5px;
+        }
+      }
+      .bannner-ad-three-content-3{
+        margin: -600px 0px 0px 600px;
+        h5{
+          font-size: 70px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        } 
+        h6{
+          font-size: 50px;
+          width: 33pc;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        button{
+          background-color: black;
+          color: white;
+          font-size: 42px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          margin-top: 20px;
+          padding: 10px;
+          border-radius: 5px;
+        }
+      }
+    }
+    
+    
+
+    .banner-ad-three{
+      border-radius: 30px;
+    }
+   
+    .swiper-slide,
+    swiper-slide {
+      padding-left: 25px;
+    }
+
   }
 }

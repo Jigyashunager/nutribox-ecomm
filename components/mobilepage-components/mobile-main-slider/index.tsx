@@ -10,7 +10,6 @@ import "swiper/css/scrollbar";
 const MobileMainSlider = () => {
   return (
     <div>
-        
         <div className="main-mobile-slider">
         <Swiper
          modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
@@ -74,6 +73,7 @@ const MobileMainSlider = () => {
           </SwiperSlide>
         </Swiper>        
         </div>
+        <div className='gray-space'></div>
     </div>
   )
 }

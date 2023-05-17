@@ -10,7 +10,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const BlogSlider = () => {
   return (
-    <>
+    <div className="desktop-blogs">
      <div className="blog-main-heading">
           <h2>HELPFUL TIPS & TRICKS</h2>
           <span>
@@ -98,7 +98,7 @@ const BlogSlider = () => {
           </Swiper>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

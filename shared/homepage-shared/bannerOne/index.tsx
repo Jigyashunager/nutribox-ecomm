@@ -5,7 +5,7 @@ import LatestDeals from "@/shared/homepage-shared/latest-deals";
 
 const BannerOne = () => {
   return (
-    <>
+    <div className="desktop-banner">
     <div className="banner">
         <Image
             alt="nutritrix"
@@ -16,7 +16,7 @@ const BannerOne = () => {
             priority
           />
       </div>
-    </>
+    </div>
   );
 };
 

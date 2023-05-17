@@ -41,7 +41,7 @@ const LatestDeals = () => {
 
 
   return (
-    <>
+    <div className="desktop-latest-deals">
       <div>
         <div className="latest-deals-heading">
           <h2>LATEST DEALS</h2>
@@ -110,7 +110,7 @@ const LatestDeals = () => {
           ))}
           </Swiper>
       </div>
-    </>
+    </div>
   );
 };
 
