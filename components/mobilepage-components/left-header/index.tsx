@@ -49,7 +49,7 @@ export default function LeftDrawer() {
     >
       <div className='main-drawer'>
       <div className='left-drawer-flex'>
-        <ClearIcon className='text-black text-9xl' onClick={toggleDrawer(anchor, false)}/> 
+          <ClearIcon className='text-black text-9xl' onClick={toggleDrawer(anchor, false)}/> 
         <div>
             <button className='left-drawer-button'>Login / Sign Up</button>
         </div>

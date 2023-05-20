@@ -391,117 +391,158 @@ swiper-slide {
   }
 }
 
-.mobile-banner{
+.mobile-banner {
   display: none;
 }
 
-.single-ad-banner{
+.single-ad-banner {
   display: none;
 }
 
-.mobile-why-nutritrix{
+.mobile-why-nutritrix {
   display: none;
 }
 
-.mobile-brands{
+.mobile-brands {
   display: none;
 }
 
-.desktop-footer{
+.desktop-footer {
   display: block;
 }
 
+.mobile-footer {
+  display: none;
+}
+
+.desktop-single-product-page {
+  display: block;
+}
+
+.mobile-single-product-page{
+  display: none;
+}
+
 @media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+  .mobile-single-product-page{
+    display: block;
+  }
+
   .desktop-product-slider {
     display: none;
   }
-  .desktop-footer{
+
+  .desktop-single-product-page {
     display: none;
   }
-  .offer-img img{
+
+  .desktop-footer {
+    display: none;
+  }
+
+  .offer-img img {
     border-radius: 15px;
   }
 
-  .single-ad-banner{
+  .single-ad-banner {
     display: block;
   }
-  .desktop-banner{
-    display: none;
-  }
-  .desktop-popular-categories{
-    display: none;
-  }
-  .desktop-latest-deals{
-    display: none;
-  }
-  .desktop-banner-three{
-    display: none;
-  }
-  .desktop-bundle{
+
+  .desktop-banner {
     display: none;
   }
 
-  .desktop-brands{
+  .desktop-popular-categories {
     display: none;
   }
 
-  .desktop-blogs{
+  .desktop-latest-deals {
     display: none;
   }
 
-  .mobile-brands{
+  .desktop-banner-three {
+    display: none;
+  }
+
+  .desktop-bundle {
+    display: none;
+  }
+
+  .desktop-brands {
+    display: none;
+  }
+
+  .desktop-blogs {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: block;
+  }
+
+  .mobile-brands {
     display: block;
     margin-bottom: 80px;
-    .mobile-brands-grid{
+
+    .mobile-brands-grid {
       display: grid;
-      .mobile-brands-flex{
+
+      .mobile-brands-flex {
         display: flex;
       }
-      .brand-logo-image{
+
+      .brand-logo-image {
         margin: 10px 70px 10px 70px;
         border-radius: 70px;
       }
     }
-    .brands-main{
-      .brands-heading{
-        svg{
+
+    .brands-main {
+      .brands-heading {
+        svg {
           width: 40px !important;
           height: 40px !important;
           margin-top: 17px;
         }
-        
-        h2{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-        font-size: 70px;
-        font-weight: 700;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        .arrow-span{
-          margin-right: 10px;
-          margin-top: -10px;
-          color: #06645c;
-          font-weight: 900;
-          stroke: #06645c;
-          stroke-width: 4;
-          
-        
+
+        h2 {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 70px;
+          font-weight: 700;
+          margin-top: 20px;
+          margin-bottom: 20px;
+
+          .arrow-span {
+            margin-right: 10px;
+            margin-top: -10px;
+            color: #06645c;
+            font-weight: 900;
+            stroke: #06645c;
+            stroke-width: 4;
+
+
+          }
+
         }
-       
-      }}
+      }
 
     }
   }
-  .desktop-why-nutritrix{
+
+  .desktop-why-nutritrix {
     display: none;
   }
-  .mobile-why-nutritrix{
+
+  .mobile-why-nutritrix {
     display: block;
     margin-top: 70px;
     margin-bottom: 120px;
-    .pointers-why-nutritrix{
+
+    .pointers-why-nutritrix {
       display: grid;
       grid-template-columns: auto;
-      .inside-headings{
+
+      .inside-headings {
         background-color: rgb(239, 238, 238);
         padding: 60px 50px 60px 50px;
         border-radius: 10px;
@@ -510,48 +551,59 @@ swiper-slide {
         justify-content: left;
         width: 80pc;
         margin-left: 30px;
-        svg{
+
+        svg {
           font-size: 150px;
           margin-right: 50px;
         }
-        h5{
+
+        h5 {
           font-size: 50px;
         }
-        p{
+
+        p {
           font-size: 40px;
         }
       }
     }
-    .headings-why-nutritrix{
-      h2{
+
+    .headings-why-nutritrix {
+      h2 {
         font-size: 70px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 700;
       }
-      h6{
+
+      h6 {
         font-size: 50px;
       }
     }
   }
+
   .mobile-banner {
     padding-top: 120px;
     display: block;
     padding-bottom: 100px;
+
     .swiper {
       margin-left: 78px;
       margin-right: 70px;
-      .bannner-ad-three-content{
+
+      .bannner-ad-three-content {
         margin: -600px 0px 0px 50px;
-        h5{
+
+        h5 {
           font-size: 70px;
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        h6{
+
+        h6 {
           font-size: 50px;
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           width: 26pc;
         }
-        button{
+
+        button {
           background-color: black;
           color: white;
           font-size: 42px;
@@ -561,18 +613,22 @@ swiper-slide {
           border-radius: 5px;
         }
       }
-      .bannner-ad-three-content-3{
+
+      .bannner-ad-three-content-3 {
         margin: -600px 0px 0px 600px;
-        h5{
+
+        h5 {
           font-size: 70px;
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        } 
-        h6{
+        }
+
+        h6 {
           font-size: 50px;
           width: 33pc;
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        button{
+
+        button {
           background-color: black;
           color: white;
           font-size: 42px;
@@ -583,13 +639,13 @@ swiper-slide {
         }
       }
     }
-    
-    
 
-    .banner-ad-three{
+
+
+    .banner-ad-three {
       border-radius: 30px;
     }
-   
+
     .swiper-slide,
     swiper-slide {
       padding-left: 25px;

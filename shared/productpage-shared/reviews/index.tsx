@@ -11,14 +11,14 @@ const Reviews = () => {
 
   return (
     <div>
-        <div>
+        <div className='mobile-user-reviews'>
+          <div className='reviews'>
             <div className='review-top-section'>
                 <h5 className='reviewed-by'>
                 Reviewed by 186 Customers
                 </h5>
                 <DropdownComponent/>
             </div>
-            
           <ul className='reviews-li'>
             <li>
               <div className='div-flex'>
@@ -26,8 +26,8 @@ const Reviews = () => {
                   <Image
                     alt="nutritrix"
                     src="https://i.ibb.co/swgDYRz/person.jpg"
-                    width={24}
-                    height={24}
+                    width={44}
+                    height={44}
                     priority
                   />
                 </div>
@@ -69,8 +69,8 @@ const Reviews = () => {
                   <Image
                     alt="nutritrix"
                     src="https://i.ibb.co/swgDYRz/person.jpg"
-                    width={24}
-                    height={24}
+                    width={44}
+                    height={44}
                     priority
                   />
                 </div>
@@ -113,8 +113,8 @@ const Reviews = () => {
                   <Image
                     alt="nutritrix"
                     src="https://i.ibb.co/swgDYRz/person.jpg"
-                    width={24}
-                    height={24}
+                    width={44}
+                    height={44}
                     priority
                   />
                 </div>
@@ -152,6 +152,8 @@ const Reviews = () => {
             </li>
           </ul>
           </div>
+          </div>
+          <div className='gray-space'></div>
     </div>
   )
 }

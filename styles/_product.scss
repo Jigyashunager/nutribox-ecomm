@@ -22,29 +22,35 @@ div#__next {
     .image-gallery-thumbnail {
         transition: none;
     }
-    .product-benefits{
+
+    .product-benefits {
         margin-top: 20px;
         margin-left: 110px;
         margin-right: 0px;
         border: 1px solid #aaded9;
-        h6{
+
+        h6 {
             margin-top: 20px;
             margin-left: 10px;
         }
-        .tick-icon{
+
+        .tick-icon {
             font-size: 16px;
             margin-left: 10px;
             margin-right: 10px;
         }
-        .product-benefits-flex{
+
+        .product-benefits-flex {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             background-color: $light-background-blue;
-            div{
+
+            div {
                 margin-left: -10px;
             }
-            p{
+
+            p {
                 text-align: center;
                 margin-left: 10px;
             }
@@ -123,43 +129,49 @@ div#__next {
 
     }
 
-    .flavour{
-        h5{
-            margin-top: 20px;   
+    .flavour {
+        h5 {
+            margin-top: 20px;
         }
-        button{
-            h6{
+
+        button {
+            h6 {
                 margin-top: 6px;
             }
         }
     }
-    .delviery-pdp{
+
+    .delviery-pdp {
         padding: 15px;
         margin-top: 20px;
         background-color: #eaf7f6;
         border-radius: 5px;
         display: flex;
         align-items: center;
-        .pincode-input{
+
+        .pincode-input {
             padding-left: 15px;
             padding: 7px;
             border-radius: 3px;
             border: 1px solid gray;
             font-family: system-ui, -apple-system;
-            text-align: left;   
+            text-align: left;
         }
-        .gps-icon{
+
+        .gps-icon {
             margin-left: 30px;
             color: #014a44;
         }
-        p{
+
+        p {
             margin-top: 15px;
             margin-left: 10px;
             font-weight: 500;
             color: $text-color;
             cursor: pointer;
         }
-        button{
+
+        button {
             border: 0px;
             padding: 9px 19px 9px 19px;
             margin-left: -20px;
@@ -169,13 +181,16 @@ div#__next {
             font-family: system-ui;
         }
     }
-    .special-offers{
+
+    .special-offers {
         margin-top: 20px;
-        h6{
+
+        h6 {
             font-size: 12px;
             margin-bottom: 20px;
         }
-        li{
+
+        li {
             padding: 5px;
             list-style: none;
             display: flex;
@@ -186,17 +201,20 @@ div#__next {
             border: 1px solid gray;
             border-radius: 4px;
             width: 33pc;
-            img{
+
+            img {
                 margin-right: 20px;
                 margin-left: 20px;
             }
-            p{
+
+            p {
                 margin: 10px 0px 10px 0px;
                 font-size: 14px;
                 font-weight: 500;
             }
         }
     }
+
     .weights-flex {
         button {
             margin-right: 10px;
@@ -430,8 +448,9 @@ div#__next {
         color: black;
     }
 }
-.product-section-page{
-    .product-section-class{
+
+.product-section-page {
+    .product-section-class {
         margin-bottom: 60px;
     }
 }
@@ -465,5 +484,459 @@ div#__next {
         font-family: system-ui;
     }
 
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .mobile-single-product-page {
+        .main-movile-reviews-section{
+            .review-heading{
+                transform: unset ;
+                border-bottom: 0px;
+                h5{
+                    font-size: 70px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                }
+            }
+        }
+        
+        .ranked{
+            font-size: 53px;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+        .other-info{
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-bottom: 80px;
+            h5{
+                font-size: 70px;
+                margin-bottom: 50px;
+            }
+            .other-info-box{
+            
+                border: 2px solid gainsboro;
+                padding: 60px;
+                border-radius: 20px;
+            }
+            h6{
+                margin-top: -20px;
+                font-size: 70px;
+                margin-bottom: 50px;
+            }
+            p{
+                font-size: 52px;
+                color: gray;
+                line-height: 70px;
+                letter-spacing: 3px;
+            }
+        }
+        .product-information{
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-bottom: 80px;
+            margin-top: 40px;
+            h5{
+                font-size: 70px;
+                margin-bottom: 50px;
+            }
+            h6{
+                margin-top: -20px;
+                font-size: 70px;
+                margin-bottom: 50px;
+            }
+            p{
+                font-size: 54px;
+                margin-bottom: 60px;
+            }
+            .product-information-box{
+                border: 2px solid gainsboro;
+                border-radius: 20px;
+                padding: 60px;
+            }
+            .traits-flex{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .supplement-info{
+                margin-top: 60px;
+                border-top: 2px solid gainsboro;
+                padding-top: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: -40px;
+                svg{
+                    font-size: 5pc;
+                    margin-top: -50px;
+                }
+            }
+        }
+        .details{
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-top: 50px;
+            margin-bottom: 80px;
+            h5{
+                font-size: 70px;
+            }
+            .details-box{
+                border: 3px solid gainsboro;
+                padding: 20px;
+                margin-top: 50px;
+                border-radius: 20px;
+                ul{
+                    list-style-type: disc; /* or other values like circle, square, etc. */
+                    margin-top: 50px;
+                }
+                ul li::marker {
+                    font-size: 2.5em;
+                    color: gray; /* Adjust the font size as desired */
+                  }
+                h6{
+                    font-size: 60px;
+                    margin-left: 35px;
+                    margin-top: 40px;
+                }
+                p{
+                    font-size: 52px;
+                    color: gray;
+                    line-height: 70px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        .overview{
+            margin-bottom: 80px;
+            h5{
+                font-size: 70px;
+                margin-top: 50px;
+                margin-left: 70px;
+                margin-bottom: 50px;
+            }
+            
+            .product-benefits{
+                margin-top: 50px;
+                margin-left: 40px;
+                h6{
+                    margin-bottom: 40px;
+                }
+                svg{
+                    font-size: 60px;
+                    margin-right: 30px;
+                }
+            }
+            .overview-box{
+                border: 2px solid gainsboro;
+                margin-left: 70px;
+                margin-right: 70px;
+                padding: 20px;
+                border-radius: 20px;
+                h6{
+                    font-size: 50px;
+                }
+                p{
+                    font-size: 40px;
+                    color: gray;
+                }
+            }
+            .div-flex-contents{
+                margin-top: 40px;
+                display: flex;
+                justify-content: space-around;
+                .horizontal-line{
+                    width: 4px;
+                    height: 130px;
+                    background-color: gainsboro;
+                }
+            }
+        }
+        .gray-line{
+            margin-top: 40px;
+            border: 1px solid gainsboro;
+            margin-bottom: 20px;
+        }
+        .combo-flex{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-top: 50px;
+            h5{
+                font-size: 65px;
+            }
+            span{
+                color: #014a44;
+            }
+            h4{
+                font-size: 50px;
+                margin-top: 20px;
+            }
+            .discounted-price{
+                font-size: 50px;
+                text-decoration: line-through;
+                color: gray;
+                margin-left: 40px;
+            }
+        }
+        .interest-free{
+            font-size: 40px;
+            margin-left: 80px;
+        }
+        .combo-products{
+            
+        .add-to-cart{
+            font-size: 60px;
+            font-weight: 700;
+            text-align: center;
+            width: 90%;
+            margin-top: 80px;
+            margin-bottom: 60px;
+            background-color: #81dcd4;
+            color: black;
+            padding: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+            border-radius: 20px;
+        }
+            .plus p{    
+                font-size: 100px;
+                margin-left: 10pc;
+                margin-top: -40px;
+                margin-bottom: -40px;
+            }
+            .product-flex{
+            display: flex;
+            margin-top: 60px;
+            margin-left: 60px;
+            padding-bottom: 40px;
+            h5 {
+                font-size: 60px;
+                margin-left: 50px;
+            }
+            h6 {
+                font-size: 50px;
+                padding-top: 100px;
+                margin-left: 50px;
+            }
+            .discounted-price {
+                text-decoration: line-through;
+                color: gray;
+            }
+            
+            .discounted-percent {
+                color: #014a44;
+            }
+            img {
+                width: 20%;
+                background-color: whitesmoke;
+                padding: 30px;
+                border-radius: 20px;
+            }
+            
+        }}
+        .mobile-product-page-combo{
+            
+            .combo-header{
+                    display: -webkit-box;
+                    overflow-x: auto;
+                    p{
+                        font-size: 60px;
+                        margin-right: 100px;
+                        display: flex;
+                        margin-left: 70px;
+                        border-bottom: 8px solid $text-color;
+                    }
+                    span{
+                        margin-left: 20px;
+                    }
+                
+            }
+        }
+        .special-offers {
+            margin-top: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+
+            margin-bottom: 50px;
+            h5 {
+                font-size: 70px;
+                margin-bottom: 20px;
+            }
     
+            li {
+                padding: 30px;
+                list-style: none;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin-left: -30px;
+                margin-bottom: 10px;
+                border: 1px solid gray;
+                border-radius: 20px;
+                width: 100%;
+                margin-top: 50px;
+    
+                img {
+                    margin-right: 50px;
+                    margin-left: 20px;
+                }
+    
+                p {
+                    margin: 10px 0px 10px 0px;
+                    font-size: 50px;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+        .select-delivery{
+            background-color: #bdfff8;
+            padding-bottom: 30px;
+            padding-top: 40px;
+            padding-left: 55px;
+            font-weight: 500;
+            h5{
+                font-size: 50px;
+                
+            }
+            svg{
+                font-size: 50px;
+            }
+            .location-icon{
+                position: relative;
+                top: -3px;
+            }
+        }
+        .page-distribution-heading {
+            margin-bottom: 10px;
+            margin-top: 70px;
+            h6 {
+                font-size: 50px;
+            }
+
+            svg {
+                margin: 0px 10px -3px 10px;
+                font-size: 32px;
+            }
+
+            h5 {
+                font-size: 50px;
+            }
+        }
+        .product-single-page{
+            margin-left: 70px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 70px;
+            .category-flex{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .price{
+                font-size: 50px;
+                margin-top: 40px;
+                span{
+                    color: #014a44;
+                    font-size: 70px;
+                }
+                .discounted-percent{
+                    color: #09635a;
+                    font-size: 40px;
+                    padding-left: 20px;
+                }
+            }
+            .premium-text{
+                font-size: 55px;
+                background-color: #F8F8F8;
+                padding: 10px;
+                border-radius: 15px;
+                width: 54pc;
+                margin-top: 50px;
+                .offer-icon{
+                    font-size: 85px;
+                    color: #09635a;
+                    margin-left: 20px;                }
+            }
+            .discounted-price{
+                font-size: 40px;
+                margin-top: 40px;
+                color: gray;
+                span{
+                    text-decoration: line-through;
+                    font-size: 60px;
+                }
+                .discounted-text{
+                    font-size: 40px;
+                    padding: 5px 20px 5px 20px;
+                    transform: $tranform;
+                    text-decoration: none;
+                    color: $text-color;
+                    border-radius: 10px;
+                    background-color: #aaded9;
+                    position: relative;
+                    left: 35px;
+                    top: -5px;
+                }
+            }
+            .stars-rating{
+                font-size: 45px;
+                margin-top: 20px;
+                justify-content: space-between;
+                font-weight: 600;
+                .stars{
+                    font-size: 50px;
+                    position: relative;
+                    top: 9px;
+                    margin-left: 0px;
+                }
+            }
+            .in-stock{
+                font-size: 40px;
+                padding: 5px 20px 5px 20px;
+                transform: $tranform;
+                color: $text-color;
+                border-radius: 10px;
+                background-color: #aaded9;
+            }
+            .category{
+                font-size: 50px;
+                color: #014a44;
+            }
+            .product-title{
+                padding-top: 20px;
+                font-size: 70px;
+            }
+            .product-by{
+                font-size: 50px;
+                text-decoration: underline;
+                margin-bottom: 40px;
+                margin-top: 30px;
+                span{
+                    font-size: 50px;
+                    color: #014a44;
+                }
+            }
+        }
+        .main-mobile-slider {
+            padding: 4pc 4pc 4pc 4pc;
+            margin-top: 30px;
+            .hero-image{
+                background-color: #F8F8F8;
+                border-radius: 20px;
+                margin-bottom: -20px;
+                padding: 10pc 22pc 10pc 22pc;
+            }
+            .swiper{
+                border-radius: 20px;
+            }
+            .swiper-slide{
+                border-radius: 20px;
+            }
+    }
+
+}
 }

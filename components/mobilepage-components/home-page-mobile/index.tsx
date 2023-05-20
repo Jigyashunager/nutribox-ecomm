@@ -19,7 +19,6 @@ const MainMobilePage = () => {
           
   return (
     <div>
-        <MobileHeader/> 
         <MobileMainSlider/>
         <MobileProductsSection heading='LATEST-DEALS' handleButtonClick={newFunction} handleSideCart={newFunction}/>
         <MobileGoals/>

@@ -7,18 +7,18 @@ const ReviewProductGallery = () => {
     <div className='review-product-image'>
       {myCustomData?.data.map((product, index) => (
         <div key={product.id}>
-          {index < 8 ? <div key={product.id} >
+          {index < 5 ? <div key={product.id} >
             <Image
               alt="nutritrix"
               src={product.image}
-              width={140}
-              height={140}
+              width={200}
+              height={200}
               priority
               className='images'
             />
-          </div> : index === 8 ?
+          </div> : index === 5 ?
             <div key={product.id} className="image-container">
-              <Image src={product.image} alt="My Image" width={140} height={140} />
+              <Image src={product.image} alt="My Image" width={200} height={200} />
               <div className="image-overlay">
                 <p>+10 </p>
               </div>
