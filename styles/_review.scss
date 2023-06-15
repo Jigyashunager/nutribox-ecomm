@@ -408,21 +408,28 @@
             }
             .reviews{
                 margin: 0px;
+                .left-stars-count{
+                    font-size: 40px;
+                    top: -13px;
+                }
+                .dropdown-item{
+                    font-size: 48px;
+                }
                 .dropdown button{
                     font-size: 60px;
                 }
                 .div-flex-review-icons{
                     p{
-                        font-size: 30px;
+                        font-size: 40px;
                     }
                     .thumb-green{
-                        font-size: 30px;
+                        font-size: 40px;
                     }
                     .thumb-red{
-                        font-size: 30px;
+                        font-size: 40px;
                     }
                     button{
-                        font-size: 30px;
+                        font-size: 40px;
                     }
                 }
                 .reviews-li li{
@@ -442,7 +449,7 @@
                     height: 120px;
                 }
                 .review-para{
-                    font-size: 40px;
+                    font-size: 50px;
                     margin-left: 0px;
                 }
                 .review-title{

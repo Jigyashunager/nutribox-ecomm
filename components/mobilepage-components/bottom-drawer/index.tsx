@@ -155,8 +155,8 @@ export default function ContentDrawer({ anchor, openName }: { anchor: Anchor, op
   return (
     <>
       <div className='mobile-bottom-drawer'>
-        {([anchor] as const).map((anchor) => (
-          <React.Fragment key={anchor}>
+        {([anchor] as const).map((anchor, index) => (
+          <React.Fragment key={index}>
             {openName === "weight" ?
               <>
                 <div onClick={toggleDrawer(anchor, true)} className='button-flex'>

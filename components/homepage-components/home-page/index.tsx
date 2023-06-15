@@ -43,7 +43,9 @@ const Homepage = () => {
       <ProductsSection handleSideCart={handleSideCart} handleButtonClick={handleButtonClick} heading="ENERGY & ENDURANCE"/>
       <ProductsSection handleSideCart={handleSideCart} handleButtonClick={handleButtonClick} heading="WORKOUT ESSENTIALS"/>
       <Brands/>
+      <div className="desktop-why-nutritrix">
       <WhyNutritrix/>
+      </div>
       <BlogSlider/>
       {/* <Footer/>       */}
     </>

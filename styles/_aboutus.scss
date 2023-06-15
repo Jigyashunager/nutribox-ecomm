@@ -74,6 +74,9 @@ div#__next {
         }
     }
 }
+.content{
+    margin-left: 7pc;
+}
 .about-us-top{
     margin: 0px 60px 0px 118px;
     margin-top: 150px;
@@ -88,7 +91,7 @@ div#__next {
         display: block;
         padding: 45px 0px 80px 0px;
         top: -406px;
-        left: 37pc;
+        left: 48pc;
         margin-bottom: 10px;
         width: 8pc;
         position: relative;
@@ -101,7 +104,7 @@ div#__next {
         display: block;
         padding: 45px 0px 80px 0px;
         top: -413px;
-        left: 43pc;
+        left: 52pc;
         margin-bottom: 10px;
         width: 8pc;
         position: relative;
@@ -138,7 +141,7 @@ div#__next {
         position: relative;
         display: block;
         padding: 5pc 0px 5pc 0px;
-        top: -534px;
+        top: -485px;
         transform: skewX(-10deg);
         border-radius: 5px;
         .over{
@@ -160,6 +163,156 @@ div#__next {
             font-size: 25px;
             font-family: fantasy;
             color: white;
+        }
+    }
+}
+.mobile-about-us-banner{
+    display: none;
+}
+.desktop-about-us-banner{
+    display: block;
+}
+.mobile-aboutus-img{
+    display: none;
+}
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .mobile-aboutus-img{
+        display: block;
+    }
+    
+    .about-us{
+        .influencer-slider{
+            margin-bottom: 120px;
+            .influencer-heading{
+                width: 36pc;
+                h6{
+                    font-size: 50px;
+                }
+                p{
+                    font-size: 40px;
+                }
+            }
+            .main-slider-offer{
+                margin: 70px 75px 0px 82px;
+            }
+            .blog-main-heading{
+                h2{
+                    font-size: 70px;
+                }
+            }
+        }
+    .main-why-nutritrix{
+        display: grid;
+     
+        .reviews-main{
+            width: 89pc;
+            margin-bottom: 70px;
+    
+            .css-ryrseu-MuiRating-root {
+                font-size: 5.5rem;
+            }
+            h5{
+                font-size: 70px;
+                padding-top: 40px;
+            }
+            h6{
+                font-size: 40px;
+                padding-bottom: 40px;
+            }
+            p{
+                font-size: 50px
+            }
+        }
+        .pointers-why-nutritrix{
+            margin-top: 80px;
+            button{
+                font-size: 60px;
+            }
+            .inside-headings{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                h5{
+                    font-size: 60px;
+                }
+                p{
+                    font-size: 50px;
+                }
+             
+            }
+            grid-template-columns: 1300px;
+            .pointers-icon{
+                font-size: 120px;
+            }
+        }
+        .headings-why-nutritrix{
+            
+            h6{
+                font-size: 50px;
+            }
+            h2{
+                font-size: 70px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 800;
+            }
+        }
+    }
+}
+    .content {
+        margin-left: 100px;
+        position: relative;
+        top: -3pc;
+        width: 100%;
+        left: -8pc;
+        margin-bottom: 30pc;
+    }
+    .about-us-top{
+        display: grid;
+        p{
+            font-size: 50px;
+        }
+        button{
+            font-size: 60px;
+        }
+        h3{
+            font-size: 70px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 900;
+        }
+        h4{
+            font-size: 50px;
+        }
+        .desktop-about-us-banner{
+            display: none;
+        }
+        .square-box{
+            top: 34pc;
+            left: 74pc;
+        }
+        .square-box-1{
+            top: 32pc;
+            left: 82pc;
+        }
+        .years-experience{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 100;
+            top: -66pc;
+            left: 50pc;
+            width: 490px;
+            padding-top: 10pc;
+            padding-bottom: 10pc;
+            .over{
+                font-size: 60px;
+            }
+            .years{
+                font-size: 120px;
+            }
+            .experience{
+                font-size: 60px;
+            }
+        }
+        .mobile-about-us-banner{
+            display: block;
+     
         }
     }
 }

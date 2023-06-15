@@ -11,10 +11,20 @@ const FAQs = () => {
   return (
     <div className='faqs'>
         <div>
-            <div>
+            <div className='desktop-aboutus-img'>
                 <Image
                     alt="nutritrix"
                     src={'/cover.jpg'}
+                    width={1400}
+                    height={530}
+                    priority
+                    className='about-us-banner'
+                />
+            </div>
+            <div className='mobile-aboutus-img'>
+                <Image
+                    alt="nutritrix"
+                    src={'https://i.ibb.co/1d4W1Hs/gym-banner-18.jpg'}
                     width={1400}
                     height={530}
                     priority

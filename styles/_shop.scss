@@ -3,9 +3,10 @@ div#__next {
     overflow-y: hidden;
 }
 
-.banner{
+.banner {
     margin-bottom: 0px;
 }
+
 .page-distribution-heading {
     display: flex;
     justify-content: left;
@@ -13,6 +14,7 @@ div#__next {
     margin: $margin-page-large-content;
     margin-bottom: -20px;
     margin-top: 40px;
+
     svg {
         margin: 0px 10px 9px 10px;
         font-size: 12px;
@@ -22,24 +24,29 @@ div#__next {
         font-size: 15px;
 
     }
+
     a {
         text-decoration: none;
     }
-    h6:hover{
+
+    h6:hover {
         color: $text-color;
     }
+
     h6 {
         color: gainsboro;
         font-size: 15px;
- 
+
     }
 }
 
 .left-shop-page-content {
-    .left-two-line-text{
+    .left-two-line-text {
         font-size: 14px;
     }
+
     width: 25pc;
+
     .left-popular-categories {
         text-align: center;
         margin-top: 50px;
@@ -50,7 +57,7 @@ div#__next {
         margin-bottom: 40px;
         border-bottom: 5px solid $text-color;
         transform: $tranform;
- 
+
         .arrow-span {
             margin-right: 10px;
             margin-top: -10px;
@@ -65,46 +72,52 @@ div#__next {
         }
 
     }
-    
-    .left-popular-categories-list{
-        .left-product-card{
+
+    .left-popular-categories-list {
+        .left-product-card {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 60px;
-            
-        .left-stars-rating{
-            span{
-            top: 2px;
-            left: -6px;
+
+            .left-stars-rating {
+                span {
+                    top: 2px;
+                    left: -6px;
+                }
+            }
+
+            .left-product-info {
+                margin-left: 10px;
+                margin-top: 7px;
+            }
+
+            .left-product-price {
+                margin-top: 10px;
+            }
         }
+
+        ul {
+            list-style: none;
+            margin: -15px 10px 10px 28px;
+            color: $text-gray;
+            font-weight: 600;
+            font-size: 14px;
         }
-        .left-product-info{
-            margin-left: 10px;
-            margin-top: 7px;
-        }
-        .left-product-price{
-            margin-top: 10px;
-        }
-        }
-        ul{
-        list-style: none;
-        margin: -15px 10px 10px 28px;
-        color: $text-gray;
-        font-weight: 600;
-        font-size: 14px;
-        }    
-        li{
+
+        li {
             margin-top: -10px;
             padding: 5px;
             border-bottom: 1px solid gainsboro;
         }
-        span{
+
+        span {
             position: relative;
             left: 300px;
             top: -33px;
         }
-        .square-icon{
+
+        .square-icon {
             width: 8px;
             transform: $tranform;
             margin-right: 20px;
@@ -113,44 +126,51 @@ div#__next {
 }
 
 
-.price-slider{
+.price-slider {
     margin-left: 60px;
     margin-top: -12px;
     width: 335px;
-    p{
+
+    p {
         margin-top: 15px;
     }
-    .MuiSlider-root{
+
+    .MuiSlider-root {
         color: $text-color;
     }
-    .MuiSlider-thumb{
+
+    .MuiSlider-thumb {
         background-color: white;
         border: 3px solid $text-color;
     }
-    .price-slider-flex{
+
+    .price-slider-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    button{
+
+    button {
         border: 0px;
         transform: $tranform;
         padding: 3px 20px 3px 20px;
-        border-radius: 2px ;
+        border-radius: 2px;
     }
-    button:hover{
+
+    button:hover {
         background-color: $text-color;
         color: white;
-        
+
     }
-    
+
 }
 
-.tags-flex{
+.tags-flex {
     margin-left: 50px;
     display: grid;
     grid-template-columns: auto auto auto;
-    p{
+
+    p {
         display: block;
         background-color: gainsboro;
         margin-left: 10px;
@@ -159,30 +179,37 @@ div#__next {
         transform: $tranform;
         cursor: pointer;
     }
-    p:hover{
+
+    p:hover {
         background-color: $text-color;
         color: white;
     }
 }
 
-.right-shop-page-content{
+.right-shop-page-content {
     position: relative;
     top: 45px;
     left: 30px;
-    .right-upper-bar{
+
+    .right-upper-bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-left: 5px;
         margin-bottom: 10px;
         width: 64pc;
+        .dropdown-item{
+            font-size: 40px;
+        }
     }
-    .upper-bar{
+
+    .upper-bar {
         display: flex;
         justify-content: left;
         align-items: center;
     }
-    .right-product-card{
+
+    .right-product-card {
         display: grid;
         grid-template-columns: 270px 270px 270px;
         grid-row: auto auto auto;
@@ -190,33 +217,38 @@ div#__next {
         grid-row-gap: 10px;
         margin-bottom: 40px;
     }
-    .MuiPagination-root{
+
+    .MuiPagination-root {
         margin-left: 7px !important;
         margin-bottom: 40px;
-        button{
+
+        button {
             padding: 20px 15px 20px 15px;
             border-radius: 0px !important;
             font-size: 18px;
             font-family: system-ui;
             border: 1px solid gainsboro;
         }
-        button:hover{
+
+        button:hover {
             color: white;
             background-color: $text-color;
         }
-        .Mui-selected{
+
+        .Mui-selected {
             background-color: $text-color;
             color: white;
         }
     }
-    .product-card{
+
+    .product-card {
         margin-left: 10px;
         background-color: #F4F4F4;
         padding: 20px;
         width: 300px;
         height: 470px;
 
-        .wishlist-icon{
+        .wishlist-icon {
             position: absolute;
             margin: -270px 0px 0px 240px;
             height: 34px;
@@ -224,7 +256,8 @@ div#__next {
             color: gray;
             cursor: pointer;
         }
-        .wishlist-icon-color{
+
+        .wishlist-icon-color {
             position: absolute;
             margin: -270px 0px 0px 240px;
             height: 34px;
@@ -232,36 +265,44 @@ div#__next {
             color: #c60303;
             cursor: pointer;
         }
-        img{
+
+        img {
             margin-left: -15px;
         }
-        .product-image{
+
+        .product-image {
             margin-top: -20px;
         }
-        h6{
+
+        h6 {
             margin-left: 5px;
             font-size: 12px;
             text-decoration: underline;
             margin-top: 15px;
             color: #807f7f;
         }
-        .two-line-text{
+
+        .two-line-text {
             font-size: 15px;
             margin-left: 5px;
 
         }
-        .stars{
+
+        .stars {
             margin-left: 3px;
         }
-        .stars-count{
+
+        .stars-count {
             margin-left: 4px;
             color: #807f7f;
         }
-        .product-price{
+
+        .product-price {
             margin-left: 5px;
             margin-top: 10px;
         }
-        .hover-up{
+
+        .hover-up {
             padding: 10px 99px 10px 99px;
             margin-left: -20px;
             margin-right: -20px;
@@ -269,7 +310,8 @@ div#__next {
             margin-top: 2px;
         }
     }
-    .layout-icon-one{
+
+    .layout-icon-one {
         font-size: 12px !important;
         width: 32px !important;
         height: 28px !important;
@@ -277,30 +319,36 @@ div#__next {
         color: $text-color;
         cursor: pointer;
     }
-    .layout-icon-two{
+
+    .layout-icon-two {
         font-size: 12px;
         width: 32px;
         height: 28px;
         margin-left: 5px;
-        color: $text-color; 
+        color: $text-color;
         cursor: pointer;
     }
-    .dropdown{
-        button{
+
+    .dropdown {
+        button {
             border: 0px;
             background-color: white;
             color: black;
             margin-left: 20px;
         }
-        .dropdown-toggle::after{
+
+        .dropdown-toggle::after {
             margin-left: 70px;
         }
-        button:active{
+
+        button:active {
             background-color: white;
             border-color: white;
             color: black;
         }
-        .dropdown-item.active, .dropdown-item:active{
+
+        .dropdown-item.active,
+        .dropdown-item:active {
             background-color: white;
             color: black;
         }
@@ -308,47 +356,328 @@ div#__next {
 }
 
 
-.main-shop-page-content{
+.main-shop-page-content {
     display: flex;
-    
-.circle-quickview{
-  width: 23px;
-  height: 23px;
-  border-radius: 50%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: $text-color;
-  top: -200px;
-  left: 242px;
 
-  cursor: pointer;
-  font-weight: 600;
+    .circle-quickview {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: $text-color;
+        top: -200px;
+        left: 242px;
+
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .quickview-icon {
+        color: white !important;
+        font-size: 14px !important;
+    }
+
+    .product-card:hover {
+        .circle-quickview {
+            display: inline-flex !important;
+        }
+
+        img {
+            margin-bottom: -24px;
+        }
+
+        .wishlist-icon {
+            margin: -246px 0px 0px 240px;
+        }
+
+        .wishlist-icon-color {
+            margin: -246px 0px 0px 240px;
+        }
+    }
+
+    .product-slider-class {
+        .circle-quickview {
+            display: inline-flex;
+            margin-bottom: -32px;
+        }
+    }
 }
 
-.quickview-icon {
-  color: white !important;
-  font-size: 14px !important;
+.mobile-shop-page {
+    display: none;
 }
 
-.product-card:hover {.circle-quickview {
-  display: inline-flex !important;}
-  img{
-    margin-bottom: -24px;
-  }
-  .wishlist-icon{
-    margin: -246px 0px 0px  240px;
-  }
-  .wishlist-icon-color{
-    margin: -246px 0px 0px  240px;
-  }
+.desktop-shop-page {
+    display: block;
 }
 
-.product-slider-class{
-  .circle-quickview{
-    display: inline-flex;
-    margin-bottom: -32px;
-  }
+.desktop-left-shop-page-content{
+    display: block;
 }
+
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .desktop-shop-pagination{
+        display: none;
+    }
+
+    .desktop-left-shop-page-content{
+        display: none;
+    }
+    .cross-icon{
+        font-size: 80px;
+        position: relative;
+        left: 86pc;
+        top: 1pc;
+    }
+    .mobile-left-shop-page-content{
+        display: block;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        .left-shop-page-content {
+            width: 90pc;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .price-slider{
+            width: 86pc;
+            margin-top: 50px;
+            span{
+                margin-top: 10px;
+            }
+            .MuiSlider-valueLabel{
+                font-size: 40px;
+            }
+            .MuiSlider-thumb{
+                width: 30px;
+                height: 30px;
+            }
+            p{
+                font-size: 50px;
+            }
+            button{
+                font-size: 48px;
+            }
+        }
+        .left-product-card{
+            margin-bottom: 50px;
+            .left-product-info{
+                margin-left: 100px;
+                .left-two-line-text{
+                    font-size: 48px;
+                }
+                .left-stars-rating{
+                    span{
+                        font-size: 40px;
+                        top: 3px;
+                    }
+                }
+                .left-product-price{
+                    h5{
+                        font-size: 48px;
+                    }
+                }
+            }
+        
+        }
+        .tags-flex {
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        p{
+            font-size: 50px;
+        }}
+        .left-popular-categories{
+            border-bottom: 15px solid $text-color;
+            margin-top: 20px;
+            h5{
+                font-size: 60px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .arrow-span{
+                svg{
+                    width: 50px;
+                    font-size: 40px;
+                }
+            }
+        }
+        .left-popular-categories-list {
+            .left-popular-categories{
+                border-bottom: 15px solid $text-color;
+                h5{
+                    font-size: 60px;    
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+                .arrow-span{
+                    svg{
+                        width: 50px;
+                        font-size: 40px;
+                    }
+                }
+            }
+            
+            ul{
+                font-size: 48px;
+                li{
+                    .square-icon{
+                        width: 30px;
+                    }
+                   
+                }
+                span {
+                    position: relative;
+                    left: 80pc;
+                    top: -80px;
+                }
+            }
+        }
+
+    }
+    .mobile-shop-page {
+        display: block;
+        .right-shop-page-content .product-card {
+            background-color: #F4F4F4;
+            border-radius: 20px;
+        }
+
+        .page-distribution-heading {
+            h6 {
+                font-size: 50px;
+            }
+
+            h5 {
+                font-size: 50px;
+            }
+
+            svg {
+                margin: 0px 10px -3px 10px;
+                font-size: 32px;
+
+            }
+        }
+
+        .right-product-card {
+            grid-template-columns: auto auto;
+            margin-bottom: 150px;
+            margin-top: 70px;
+        }
+
+        .product-card:hover {
+            .circle-quickview {
+                display: inline-flex !important;
+            }
+
+            img {
+                margin-bottom: -0px;
+            }
+
+            .wishlist-icon {
+                margin: 0px 0px 0px 0px;
+            }
+
+            .wishlist-icon-color {
+                margin: 0px 0px 0px 0px;
+            }
+        }
+
+        .right-shop-page-content {
+            .product-card {
+                width: 675px;
+                height: 1220px;
+                margin-bottom: 50px;
+
+                .circle-quickview {
+                    top: -590px;
+                    left: 525px;
+                    height: 70px;
+                    width: 70px;
+                    display: inline-flex;
+                }
+
+                .quickview-icon {
+                    font-size: 45px !important;
+                }
+
+                .wishlist-icon {
+                    margin: -600px 0px 0px 25px;
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .wishlist-icon-color {
+                    margin: -600px 0px 0px 25px;
+                    width: 80px;
+                    height: 80px;
+
+                }
+
+                .stars {
+                    font-size: 40px;
+                }
+
+                h6 {
+                    font-size: 40px;
+                }
+
+                .product-price {
+                    margin-bottom: 50px;
+
+                    h5 {
+                        font-size: 50px;
+                    }
+                }
+
+                .hover-up {
+                    padding: 11px 175px 11px 175px;
+                    margin-left: -18px;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+
+                    .add-to-cart {
+                        font-size: 50px;
+                    }
+                }
+
+                .two-line-text {
+                    font-size: 44px;
+                    margin-top: 40px;
+                    width: 38pc;
+                }
+
+                .stars-rating {
+                    font-size: 40px;
+                    margin-bottom: 40px;
+                    position: relative;
+                    top: -1px;
+                }
+            }
+
+            .dropdown button {
+                font-size: 40px;
+            }
+
+            .mobile-left-drawer {
+                button {
+                    font-size: 30px;
+                    color: black;
+                    border-radius: 10px;
+                    padding: 15px;
+                    border: 1px solid gainsboro;
+                }
+            }
+
+            .right-upper-bar {
+                width: 86pc;
+
+                p {
+                    font-size: 35px;
+                    margin-left: 120px;
+                }
+            }
+        }
+    }
+
+    .desktop-shop-page {
+        display: none;
+    }
 }

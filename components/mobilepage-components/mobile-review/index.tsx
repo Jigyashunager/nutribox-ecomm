@@ -14,7 +14,7 @@ const MobileReviewsSection = () => {
 
     const [value, setValue] = useState(4)
     const newFunction = () => {
-        
+
     }
 
   return (
@@ -124,7 +124,7 @@ const MobileReviewsSection = () => {
           <Reviews/>
           
         </div>
-        <MobileProductsSection heading='BUDGET COMBOS' handleButtonClick={newFunction} handleSideCart={newFunction}/>
+        <MobileProductsSection heading='SIMILAR PRODUCTS' handleButtonClick={newFunction} handleSideCart={newFunction}/>
 
     </div>
   )

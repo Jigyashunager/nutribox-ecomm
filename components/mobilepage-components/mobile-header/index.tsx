@@ -17,7 +17,7 @@ const MobileHeader = () => {
   return (
     <div>
         <div className='mobile-header'>
-            <LeftDrawer/>
+            <LeftDrawer openName='home' anchor='left'/>
             <div className='logo-image'>
                 <Image
                   alt="nutritrix"
@@ -26,6 +26,7 @@ const MobileHeader = () => {
                   width={440}
                   height={440}
                   priority
+                  onClick={gotoHome}
                 />
             </div>
             <div className="icons">

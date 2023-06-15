@@ -12,7 +12,7 @@ import MobileFooter from '@/components/mobilepage-components/mobile-footer';
 export default function App({ Component, pageProps }: AppProps) {
   return <>
       <SSRProvider>
-      <MobileHeader/> 
+      <MobileHeader /> 
         <Header wishlistCount='2'/>
         <Component {...pageProps} />
         <Footer/>

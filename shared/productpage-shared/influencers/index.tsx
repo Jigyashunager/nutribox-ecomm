@@ -21,7 +21,7 @@ const InfluencerSlider = () => {
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={0}
-              slidesPerView={4}
+              slidesPerView={2}
               // onSlideChange={() => console.log("slide change")}
               // onSwiper={(swiper) => console.log(swiper)}
               navigation={false}
@@ -32,8 +32,8 @@ const InfluencerSlider = () => {
                   <Image
                     alt="nutritrix"
                     src={"https://i.ibb.co/xSdfDwX/p1.jpg"}
-                    width={330}
-                    height={400}
+                    width={630}
+                    height={800}
                     priority
                   />
                 </div>
@@ -48,8 +48,8 @@ const InfluencerSlider = () => {
                   <Image
                     alt="nutritrix"
                     src={"https://i.ibb.co/PspBdt3/p2.jpg"}
-                    width={330}
-                    height={400}
+                    width={630}
+                    height={800}
                     priority
                   />
                 </div>
@@ -64,8 +64,8 @@ const InfluencerSlider = () => {
                   <Image
                     alt="nutritrix"
                     src={"https://i.ibb.co/2kXs8QX/p3.jpg"}
-                    width={330}
-                    height={400}
+                    width={630}
+                    height={800}
                     priority
                   />
                 </div>
@@ -79,8 +79,8 @@ const InfluencerSlider = () => {
                   <Image
                     alt="nutritrix"
                     src={"https://i.ibb.co/8drRch3/p4.jpg"}
-                    width={330}
-                    height={400}
+                    width={630}
+                    height={800}
                     priority
                   />
                 </div>
@@ -95,8 +95,8 @@ const InfluencerSlider = () => {
                   <Image
                     alt="nutritrix"
                     src={"https://i.ibb.co/xSdfDwX/p1.jpg"}
-                    width={330}
-                    height={400}
+                    width={630}
+                    height={800}
                     priority
                   />
                 </div>
@@ -111,8 +111,8 @@ const InfluencerSlider = () => {
                   <Image
                     alt="nutritrix"
                     src={"https://i.ibb.co/PspBdt3/p2.jpg"}
-                    width={330}
-                    height={400}
+                    width={630}
+                    height={800}
                     priority
                   />
                 </div>
@@ -127,8 +127,8 @@ const InfluencerSlider = () => {
                   <Image
                     alt="nutritrix"
                     src={"https://i.ibb.co/2kXs8QX/p3.jpg"}
-                    width={330}
-                    height={400}
+                    width={630}
+                    height={800}
                     priority
                   />
                 </div>
@@ -142,8 +142,8 @@ const InfluencerSlider = () => {
                   <Image
                     alt="nutritrix"
                     src={"https://i.ibb.co/8drRch3/p4.jpg"}
-                    width={330}
-                    height={400}
+                    width={630}
+                    height={800}
                     priority
                   />
                 </div>

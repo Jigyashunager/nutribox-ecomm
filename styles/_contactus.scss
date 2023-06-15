@@ -152,3 +152,109 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .contactus{
+        margin-bottom: 150px;
+        .contact-form-content{
+            h5{
+                font-size: 40px;
+            }
+            .inputs input{
+                font-size: 50px;
+                width: 85pc;
+                margin-bottom: 30px;
+            }
+            textarea{
+                width: 85pc;
+                font-size: 50px;
+            }
+            button{
+                font-size: 40px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .checkbox-save{
+                font-size: 40px;
+                svg{
+                    font-size: 40px;
+                }
+              
+            }
+        }
+        .map-feedback{
+            display: grid;
+            .contactus-heading{
+            h2{
+                font-size: 50px;
+                font-weight: 700;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                
+            }
+            span {
+                position: relative;
+                left: 20px;
+                top: 3px;
+            }
+        }
+        }
+    }
+    .contactus-top{
+        width: 95pc;
+        display: grid;
+        .get-in-touch{
+            margin-top: 100px;
+            h4{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 50px;
+            }
+            h5{
+                font-size: 40px;
+                svg{
+                    font-size: 50px;
+                }
+            }
+            p{
+                font-size: 40px;
+                margin-left: 70px;
+            }
+            .open-time{
+                .time{
+                    margin-left: 70px;
+                }
+            }
+        }
+        img{
+            width: 1200px !important;
+            height: 1200px !important;
+            border-radius: 10px;
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+        .about-us-top-middle{
+            margin-left: 150px;
+            margin-top: 100px;
+            h6{
+                font-size: 50px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-bottom: 50px;
+            }
+            h5{
+                font-size: 50px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 700;
+                width: 100%;
+                margin-bottom: 100px;
+            }
+            p{
+                font-size: 40px;
+                width: 80%;
+            }
+            button{
+                font-size: 50px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 700;
+            }
+        }
+    }
+}

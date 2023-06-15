@@ -44,3 +44,49 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .desktop-aboutus-img{
+        display: none;
+    }
+    .mobile-aboutus-img{
+        margin-top: 80px;
+
+    }
+    .faqs{
+        .accordion{
+            width: 85pc;
+            margin-left: 60px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            border-top: 6px solid gainsboro;
+            .css-1fjvggn-MuiPaper-root-MuiAccordion-root{
+                border-bottom: 6px solid gainsboro;
+            }
+            svg{
+                font-size: 40px;
+            }
+        }
+        .faqs-top{
+            display: grid;
+            margin-left: -40px;
+            margin-top: 80px;
+            p{
+                font-size: 50px;
+                position: relative;
+                width: 85pc;
+            }
+        }
+        .faqs-heading{
+            text-align: left;
+            position: relative;
+            width: 85pc;
+            h2{
+                font-size: 70px;
+            }
+            span svg{
+                font-size: 40px;
+            }
+        }
+    }
+}

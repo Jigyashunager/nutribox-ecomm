@@ -54,7 +54,6 @@ const Reviews = () => {
                 <p className='review-date'>Aligarh</p>
                 </div>
                 <div className='div-flex-thumb-icons'>
-                <p>Was this review helpful?</p>
                 <ThumbUpOffAltRoundedIcon className='thumb-green'/>
                 <p className='thumb-counts'>(3)</p>
                 <ThumbDownRoundedIcon className='thumb-red'/>
@@ -98,7 +97,6 @@ const Reviews = () => {
                 <p className='review-date'>Aligarh</p>
                 </div>
                 <div className='div-flex-thumb-icons'>
-                <p>Was this review helpful?</p>
                 <ThumbUpOffAltRoundedIcon className='thumb-green'/>
                 <p className='thumb-counts'>(3)</p>
                 <ThumbDownRoundedIcon className='thumb-red'/>
@@ -141,7 +139,6 @@ const Reviews = () => {
                 <p className='review-date'>Aligarh</p>
                 </div>
                 <div className='div-flex-thumb-icons'>
-                <p>Was this review helpful?</p>
                 <ThumbUpOffAltRoundedIcon className='thumb-green'/>
                 <p className='thumb-counts'>(3)</p>
                 <ThumbDownRoundedIcon className='thumb-red'/>
