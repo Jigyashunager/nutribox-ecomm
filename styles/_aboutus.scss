@@ -179,6 +179,19 @@ div#__next {
     .mobile-aboutus-img{
         display: block;
     }
+    .about-us{
+        .swiper, swiper-container {
+            height: 55pc !important;
+        }
+        .swiper-pagination{
+            top: 45pc !important;
+            .swiper-pagination-bullet{
+                position: relative;
+                width: 65px !important;
+                left: 40pc !important;
+            }
+        }
+    }
     
     .about-us{
         .influencer-slider{
@@ -203,19 +216,14 @@ div#__next {
                 }
             }
         }
+   
     .main-why-nutritrix{
         display: grid;
         .swiper-backface-hidden .swiper-slide {
             height: 50pc;
         }
-        .swiper-pagination{
-            top: 45pc !important;
-            .swiper-pagination-bullet{
-                position: relative;
-                width: 65px !important;
-                left: 40pc !important;
-            }
-        }
+  
+       
         .reviews-main{
             width: 89pc;
             margin-bottom: 70px;
