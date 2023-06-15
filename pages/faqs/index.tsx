@@ -24,8 +24,8 @@ const FAQs = () => {
             <div className='mobile-aboutus-img'>
                 <Image
                     alt="nutritrix"
-                    src={'https://i.ibb.co/1d4W1Hs/gym-banner-18.jpg'}
-                    width={1400}
+                    src={'/gymb2.jpg'}
+                    width={1370}
                     height={530}
                     priority
                     className='about-us-banner'

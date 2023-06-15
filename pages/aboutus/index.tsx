@@ -22,7 +22,7 @@ const AboutUs = () => {
             <div className='mobile-aboutus-img'>
                 <Image
                     alt="nutritrix"
-                    src={'https://i.ibb.co/zQr2Mvy/gym-banner-06.jpg'}
+                    src={'/gymb1.jpg'}
                     width={1400}
                     height={530}
                     priority
