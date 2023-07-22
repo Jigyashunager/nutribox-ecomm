@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import LeftDrawer from '../left-header';
+import Dropdown from '@/shared/dropdown';
 
 const MobileHeader = () => {
   const router = useRouter();
@@ -30,13 +31,15 @@ const MobileHeader = () => {
                 />
             </div>
             <div className="icons">
-                <p>
-                    <SearchIcon className="cart-icon mr-2 mt-1 text-8xl"/>
-                </p>
+                <div>
+                    <Dropdown/>
+                </div>
+                <div className=''>
                 <p>
                   <ShoppingBagOutlinedIcon className="cart-icon text-8xl" />
                 </p>
                 <p className="circle"><span className='zero text-lg'>0</span></p>
+                </div>
               </div>
         </div>
     </div>

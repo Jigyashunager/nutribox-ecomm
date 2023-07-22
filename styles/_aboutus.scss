@@ -342,3 +342,39 @@ div#__next {
         }
     }
 }
+
+
+
+@media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .blog-image{
+        cursor: pointer;
+        .social-icons{
+            position: relative;
+            left: 295px;
+            top: 190px;
+            color: white;
+            svg{
+                margin-bottom: 20px;
+                background-color: #014a44;
+                border-radius: 50%;
+                padding: 4px;
+            }
+        }
+    }
+    .influencer-slider .main-slider-offer .blog-image:hover {
+        .social-icons{
+            left: 50px;
+            top: 250px;
+            position: absolute;
+            color: white;
+            svg{
+                margin-bottom: 20px;
+                background-color: #014a44;
+                border-radius: 50%;
+                padding: 4px;
+                font-size: 70px;
+            }
+        }
+    }
+    
+}

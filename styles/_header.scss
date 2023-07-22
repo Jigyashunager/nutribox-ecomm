@@ -3,6 +3,9 @@ $text-color: #014a44;
 $ui-font: system-ui;
 $light-background-blue: #eaf7f6;
 
+.drodown-search{
+
+}
 .navbar {
     height: 100px;
     background-color: white;
@@ -560,6 +563,14 @@ $light-background-blue: #eaf7f6;
 }
 
 @media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
+    .input{
+        font-size: 50px;
+        padding-left: 20px;
+    }
+    .css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper{
+        left: 900px !important;
+        top: 160px !important;
+    }
     .desktop-header {
       display: none; /* Hide on smaller screens */
     }
@@ -578,7 +589,7 @@ $light-background-blue: #eaf7f6;
             margin-left: 13px;
             font-size: 30px;
             font-weight: 700;
-            top: 0px;
+            top: -80px;
             left: 2px;
             position: relative;
         }
@@ -590,8 +601,8 @@ $light-background-blue: #eaf7f6;
             justify-content: center;
             position: relative;
             background-color: #C60303;
-            left: -45px;
-            top: 40px;
+            left: 45px;
+            top: -60px;
             color: white;
             font-weight: 600;
             cursor: pointer;
@@ -612,6 +623,10 @@ $light-background-blue: #eaf7f6;
         .icons{
             display: flex;
             align-items: baseline;
+            margin-top: 40px;
+            div{
+                font-size: 100px;
+            }
             svg{
                 font-size: 100px;
                 color: white;
