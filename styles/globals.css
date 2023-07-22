@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 
+@media screen and (max-width: 736px) and (min-width: 414px) and (pointer: coarse) {
+  div#__next {
+    width: 360%;
+  }
+}
 @media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
   div#__next {
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 360%;
   }
   .gray-space {
     width: 100%;
