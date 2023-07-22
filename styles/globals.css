@@ -23,11 +23,6 @@
   }
 }
 
-@media screen and (max-width: 844px) and (min-width: 390px) and (pointer: coarse) {
-  div#__next{
-      width: 385%;
-  }
-}
 
 
 
