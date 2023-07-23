@@ -56,10 +56,19 @@ export default function LeftDrawer({ openName, anchor }: { openName: string, anc
     if (text === "Home") {
       router.push('/');
     }
+
+    if (text === "Login") {
+      router.push('/my-account');
+    }
     
     if (text === "Blogs") {
       router.push('/blogs');
     }
+    
+    if (text === "Bestsellers") {
+      router.push('/bestsellers');
+    }
+    
     setState({ ...state, [anchor]: false });
 
   }
@@ -74,7 +83,7 @@ export default function LeftDrawer({ openName, anchor }: { openName: string, anc
         <div className='left-drawer-flex'>
           <ClearIcon className='text-black text-9xl' onClick={toggleDrawer(anchor, false)} />
           <div>
-            <button className='left-drawer-button'>Login / Sign Up</button>
+            <button onClick={() => gotoShop("Login")} className='left-drawer-button'>Login / Sign Up</button>
           </div>
 
         </div>

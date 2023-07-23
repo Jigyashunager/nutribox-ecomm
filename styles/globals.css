@@ -5,13 +5,15 @@
 
 @media screen and (max-width: 736px) and (min-width: 414px) and (pointer: coarse) {
   div#__next {
-    width: 360%;
+    width: 360% !important;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 300px) and (pointer: coarse) {
   div#__next {
     overflow-x: hidden;
     overflow-y: hidden;
+    width: 380% ;
+
   }
   .gray-space {
     width: 100%;
