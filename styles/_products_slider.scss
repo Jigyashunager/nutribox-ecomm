@@ -58,8 +58,26 @@ swiper-container {
 
   .circle-quickview {
     position: relative;
-    top: -193px !important;
-    left: 196px !important;
+    top: -204px !important;
+    left: -18px !important;
+  }
+
+  .wishlist-icon {
+    position: absolute;
+    margin: -208px 0px 0px -484px;
+    height: 29px;
+    width: 25px;
+    color: grayscale($color: #807f7f);
+    cursor: pointer;
+  }
+
+  .wishlist-icon-color {
+    position: absolute;
+    margin: -208px 0px 0px -484px;
+    height: 29px;
+    width: 25px;
+    color: #c60303;
+    cursor: pointer;
   }
 }
 
@@ -221,7 +239,7 @@ swiper-container {
 
 .wishlist-icon {
   position: absolute;
-  margin: 5px 0px 0px -35px;
+  margin: -192px 0px 0px -72px;
   height: 29px;
   width: 25px;
   color: grayscale($color: #807f7f);
@@ -230,7 +248,7 @@ swiper-container {
 
 .wishlist-icon-color {
   position: absolute;
-  margin: 5px 0px 0px -35px;
+  margin: -192px 0px 0px -72px;
   height: 29px;
   width: 25px;
   color: #c60303;
@@ -367,13 +385,11 @@ swiper-slide {
   display: none;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
   background-color: $text-color;
-  top: -46px;
-  left: -33px;
-
   cursor: pointer;
   font-weight: 600;
+  margin: -188px 0px 0px 30px;
 }
 
 .quickview-icon {

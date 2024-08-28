@@ -373,7 +373,7 @@ div#__next {
         border-bottom: 1px solid #014a44;
         width: 9.7pc;
         padding-top: 15px;
-
+        position: relative;
 
         .minus {
             border: 0px;
@@ -392,22 +392,17 @@ div#__next {
             padding-bottom: 5px;
 
             .MuiSvgIcon-root {
-                top: 42pc;
-                right: 0px;
-                margin-top: 13px;
-                left: 58pc;
-                bottom: 0px;
-                position: absolute;
+                margin-top: 3px;
+                margin-left: 110px;
             }
 
         }
 
         p {
-            padding-left: 30px;
-            padding-right: 35px;
             font-size: 28px;
-            padding-bottom: 13px;
-            margin-bottom: -10px;
+            position: absolute;
+            top: 9px;
+            left: 69px;
         }
     }
 
